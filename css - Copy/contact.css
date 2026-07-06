@@ -1,0 +1,575 @@
+.contact-hero {
+  position: relative;
+  padding: 60px 16px;
+  text-align: center;
+  color: white;
+  background: 
+    url('../images/banners/contact-hero.png')
+    center center / cover no-repeat;
+  min-height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.contact-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  z-index: 0;
+}
+
+.contact-hero-inner {
+  position: relative;
+  z-index: 1;
+}
+
+.contact-badge {
+  display: inline-block;
+  background: #C9A84C;
+  color: #1a1a1a;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 6px 16px;
+  border-radius: 20px;
+  margin-bottom: 16px;
+  letter-spacing: 1px;
+}
+
+.contact-heading {
+  font-size: 42px;
+  font-weight: 800;
+  margin: 8px 0;
+}
+
+.ch-black { color: #fff; }
+.ch-gold  { color: #C9A84C; }
+
+.contact-subtext {
+  font-size: 15px;
+  color: #aaa;
+  margin: 0;
+}
+
+.contact-main {
+  padding: 48px 16px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 32px;
+  align-items: start;
+}
+
+.contact-card {
+  display: flex;
+  gap: 16px;
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 12px 
+    rgba(0,0,0,0.06);
+  transition: transform 0.2s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px 
+    rgba(0,0,0,0.1);
+}
+
+.contact-card-icon {
+  font-size: 28px;
+  flex-shrink: 0;
+}
+
+.contact-card-content h3 {
+  font-size: 15px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 6px;
+}
+
+.contact-card-content p {
+  font-size: 13px;
+  color: #666;
+  margin: 2px 0;
+}
+
+.contact-map-link {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 13px;
+  color: #C9A84C;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.contact-phone-link {
+  font-size: 15px;
+  font-weight: 700;
+  color: #1a1a1a;
+  text-decoration: none;
+  display: block;
+  margin: 2px 0;
+}
+
+.contact-phone-link:hover {
+  color: #C9A84C;
+}
+
+.contact-timing {
+  font-size: 12px;
+  color: #999;
+  margin-top: 6px;
+}
+
+.contact-whatsapp-btn {
+  display: inline-block;
+  margin-top: 10px;
+  background: #25D366;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.contact-whatsapp-btn:hover {
+  background: #1ebe5d;
+}
+
+.contact-tagline {
+  font-style: italic;
+  color: #C9A84C !important;
+  font-weight: 600;
+}
+
+.contact-form-box {
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  border-radius: 20px;
+  padding: 32px;
+  box-shadow: 0 4px 24px 
+    rgba(0,0,0,0.08);
+}
+
+.contact-form-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 6px;
+}
+
+.contact-form-sub {
+  font-size: 13px;
+  color: #999;
+  margin: 0 0 24px;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 6px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  font-size: 14px;
+  color: #1a1a1a;
+  outline: none;
+  transition: border 0.2s ease;
+  box-sizing: border-box;
+  background: #fafafa;
+}
+
+.form-input:focus {
+  border-color: #C9A84C;
+  background: #fff;
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.contact-submit-btn {
+  width: 100%;
+  background: #25D366;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 14px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 8px;
+}
+
+.contact-submit-btn:hover {
+  background: #1ebe5d;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px 
+    rgba(37,211,102,0.35);
+}
+
+.contact-map-section {
+  padding: 0 16px 48px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.map-heading {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.map-wrapper {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px 
+    rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+  .contact-heading {
+    font-size: 28px;
+  }
+  .contact-form-box {
+    padding: 20px;
+  }
+  .contact-hero {
+    min-height: 200px;
+    padding: 40px 16px;
+    background-size: cover;
+  }
+}
+
+/* ── Owner/Ambassador Section ── */
+.owner-section {
+  padding: 48px 16px;
+  background: #fafafa;
+  border-top: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.owner-container {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.owner-img-col {
+  flex: 0 0 42%;
+  max-width: 42%;
+}
+
+.owner-img {
+  width: 100%;
+  height: auto;
+  max-height: 700px;
+  object-fit: contain;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px
+    rgba(0,0,0,0.15);
+  display: block;
+}
+
+.owner-info-col {
+  flex: 1;
+  padding: 20px 0;
+}
+
+.owner-badge {
+  display: inline-block;
+  background: #C9A84C;
+  color: #1a1a1a;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 6px 16px;
+  border-radius: 20px;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+}
+
+.owner-heading {
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin: 0 0 16px;
+}
+
+.owner-black { color: #1a1a1a; }
+.owner-gold  { color: #C9A84C; }
+
+.owner-subtext {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.8;
+  margin: 0 0 20px;
+  max-width: 480px;
+}
+
+.owner-contact {
+  margin-bottom: 24px;
+}
+
+.owner-contact p {
+  font-size: 14px;
+  color: #444;
+  font-weight: 500;
+  margin: 6px 0;
+}
+
+.owner-buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.owner-btn-shop {
+  background: #C9A84C;
+  color: #1a1a1a;
+  padding: 12px 28px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.owner-btn-shop:hover {
+  background: #a8893a;
+  transform: translateY(-2px);
+}
+
+.owner-btn-whatsapp {
+  background: #25D366;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.owner-btn-whatsapp:hover {
+  background: #1ebe5d;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .owner-container {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .owner-img-col {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .owner-img {
+    height: auto;
+    max-height: 500px;
+  }
+  .owner-info-col {
+    padding: 0;
+  }
+  .owner-heading {
+    font-size: 26px;
+  }
+  .owner-buttons {
+    flex-direction: column;
+  }
+  .owner-btn-whatsapp {
+    text-align: center;
+  }
+}
+
+/* ===== OWNER SECTION DECORATIONS ===== */
+.owner-decorations {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.glow-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px);
+  opacity: 0.4;
+  animation: orbDrift 8s infinite alternate ease-in-out;
+}
+.orb-1 {
+  width: 300px;
+  height: 300px;
+  background: #D4AF37;
+  top: -100px;
+  right: -50px;
+}
+.orb-2 {
+  width: 250px;
+  height: 250px;
+  background: #128C7E;
+  bottom: -50px;
+  right: 15%;
+  animation-delay: -3s;
+}
+
+.deco-icon {
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  border-radius: 14px;
+  background: rgba(255,255,255,0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.6);
+  box-shadow: 
+    0 10px 25px rgba(0,0,0,0.06),
+    inset 0 2px 4px rgba(255,255,255,0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  pointer-events: auto;
+  cursor: default;
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  animation: floatDeco 6s infinite ease-in-out;
+}
+
+.deco-icon:hover {
+  transform: scale(1.08) translateY(-4px) !important;
+  box-shadow: 
+    0 15px 35px rgba(212,175,55,0.2),
+    inset 0 2px 4px rgba(255,255,255,1);
+  background: rgba(255,255,255,0.95);
+}
+
+.icon-wa {
+  top: 15%;
+  right: 12%;
+  animation-delay: 0s;
+}
+.icon-phone {
+  top: 45%;
+  right: 4%;
+  animation-delay: 1.2s;
+  background: linear-gradient(135deg, rgba(255,255,255,0.8), rgba(240,240,240,0.5));
+}
+.icon-pin {
+  bottom: 22%;
+  right: 18%;
+  animation-delay: 2.5s;
+  background: linear-gradient(135deg, rgba(212,175,55,0.15), rgba(255,255,255,0.7));
+}
+.icon-chat {
+  top: 30%;
+  right: 28%;
+  width: 45px;
+  height: 45px;
+  font-size: 22px;
+  animation-delay: 3.8s;
+}
+.icon-shop {
+  bottom: 40%;
+  right: 8%;
+  width: 65px;
+  height: 65px;
+  font-size: 32px;
+  animation-delay: 0.8s;
+}
+.icon-bag {
+  top: 65%;
+  right: 32%;
+  width: 48px;
+  height: 48px;
+  font-size: 24px;
+  animation-delay: 4.2s;
+}
+
+.deco-sparkle, .deco-star {
+  position: absolute;
+  font-size: 18px;
+  animation: sparklePulse 4s infinite ease-in-out;
+}
+.sp-1 { top: 12%; right: 26%; animation-delay: 0s; }
+.sp-2 { bottom: 28%; right: 6%; font-size: 14px; animation-delay: 1.5s; }
+.st-1 { top: 58%; right: 22%; font-size: 16px; animation-delay: 2.2s; }
+
+.deco-particle {
+  position: absolute;
+  background: #D4AF37;
+  border-radius: 50%;
+  box-shadow: 0 0 8px #D4AF37;
+  animation: floatDeco 7s infinite alternate ease-in-out;
+}
+.p-1 { width: 6px; height: 6px; top: 38%; right: 14%; animation-delay: 0.3s; }
+.p-2 { width: 4px; height: 4px; top: 78%; right: 28%; animation-delay: 1.8s; }
+.p-3 { width: 8px; height: 8px; top: 20%; right: 6%; animation-delay: 3.1s; opacity: 0.6; }
+
+@keyframes floatDeco {
+  0% { transform: translateY(0px) rotate(0deg); }
+  33% { transform: translateY(-12px) rotate(4deg); }
+  66% { transform: translateY(6px) rotate(-3deg); }
+  100% { transform: translateY(0px) rotate(0deg); }
+}
+
+@keyframes orbDrift {
+  0% { transform: translate(0, 0) scale(1); }
+  100% { transform: translate(-40px, 30px) scale(1.1); }
+}
+
+@keyframes sparklePulse {
+  0%, 100% { transform: scale(1); opacity: 0.4; }
+  50% { transform: scale(1.4); opacity: 1; filter: drop-shadow(0 0 6px #D4AF37); }
+}
+
+@media (max-width: 992px) {
+  .deco-icon, .deco-sparkle, .deco-star, .deco-particle {
+    transform: scale(0.8) !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .orb-1, .orb-2 { opacity: 0.2; }
+  /* Hide elements that might overlap on small screens */
+  .icon-chat, .icon-shop, .icon-bag, .sp-1, .st-1, .p-1, .p-2 { display: none !important; }
+  
+  .icon-wa { top: 5%; right: 5%; }
+  .icon-phone { top: 35%; right: 2%; }
+  .icon-pin { bottom: 5%; right: 5%; }
+}

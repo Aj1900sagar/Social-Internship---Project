@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>Your Cart | Kasaudhan Collection</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/products.css" />
+  <link rel="stylesheet" href="../css/payment.css" />
+
+  <link rel="icon" type="image/x-icon" href="../favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <meta name="theme-color" content="#111111">
+</head>
+<body>
+
+  <!-- STICKY HEADER -->
+  <header id="header" class="header">
+    <div class="header-inner">
+      <a href="../index.html#home" class="logo" aria-label="Kasaudhan Collection Home">
+        <span class="logo-k">K</span>
+        <div class="logo-text">
+          <span class="logo-name">KASAUDHAN</span>
+          <span class="logo-sub">COLLECTION</span>
+        </div>
+      </a>
+
+      <nav class="nav-desktop" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="../index.html#home" class="nav-link">Home</a></li>
+          <li><a href="../index.html#categories" class="nav-link">Categories</a></li>
+          <li><a href="products.html" class="nav-link">Products</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="../index.html#about" class="nav-link">About</a></li>
+          <li><a href="../index.html#reviews" class="nav-link">Reviews</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button id="searchToggle" class="icon-btn" aria-label="Search">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </button>
+        <button class="icon-btn cart-btn" aria-label="Shopping Cart">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+          <span class="cart-badge" id="cartCount">0</span>
+        </button>
+        <a href="products.html" class="btn btn-shop">Shop Now</a>
+        <button id="menuToggle" class="icon-btn menu-btn" aria-label="Open Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Search Bar -->
+    <div id="searchBar" class="search-bar" hidden>
+      <div class="search-container">
+        <input type="search" id="searchInput" placeholder="Search jeans, shirts, kids wear..." class="search-input" aria-label="Search products" autocomplete="off" />
+        <button id="searchClose" class="search-close" aria-label="Close search">✕</button>
+      </div>
+    </div>
+
+    <!-- Mobile Nav Drawer -->
+    <div id="mobileOverlay" class="mobile-overlay" aria-hidden="true" hidden></div>
+    <nav id="mobileNav" class="nav-mobile" aria-label="Mobile Navigation" hidden>
+      <div class="mobile-nav-header">
+        <a href="../index.html#home" class="logo mobile-logo" aria-label="Home">
+          <span class="logo-k">K</span>
+          <div class="logo-text">
+            <span class="logo-name">KASAUDHAN</span>
+            <span class="logo-sub">COLLECTION</span>
+          </div>
+        </a>
+        <button id="mobileClose" class="icon-btn mobile-close" aria-label="Close Menu">✕</button>
+      </div>
+      
+      <div class="mobile-nav-actions">
+        <button class="icon-btn mobile-search-btn" aria-label="Search">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          Search
+        </button>
+        <button class="icon-btn cart-btn mobile-cart-btn" aria-label="Cart">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+          Cart <span class="cart-badge" id="mobileCartCount">0</span>
+        </button>
+      </div>
+
+      <ul class="mobile-nav-list">
+        <li><a href="../index.html#home" class="mobile-nav-link">Home</a></li>
+        <li><a href="../index.html#categories" class="mobile-nav-link">Categories</a></li>
+        <li><a href="products.html" class="mobile-nav-link">Products</a></li>
+        <li><a href="gallery.html" class="mobile-nav-link">Gallery</a></li>
+        <li><a href="../index.html#about" class="mobile-nav-link">About</a></li>
+        <li><a href="../index.html#reviews" class="mobile-nav-link">Reviews</a></li>
+        <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+      </ul>
+      
+      <div class="mobile-nav-ctas">
+        <a href="products.html" class="btn btn-shop w-full mobile-shop-btn">Shop Now</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="products-page">
+    <div class="container">
+      <div class="cart-page-container">
+        <div class="cart-page-header">
+          <h1 class="cart-page-title">🛒 Your Cart</h1>
+          <a href="products.html" class="btn btn-outline-dark btn-sm">Continue Shopping</a>
+        </div>
+        
+        <div id="cartBody">
+          <!-- Cart items injected by JS -->
+        </div>
+
+        <div id="cartFooter" style="margin-top: 30px; border-top: 2px solid #eee; padding-top: 20px; display: flex; flex-direction: column; align-items: flex-end; gap: 15px;" hidden>
+          <div style="font-size: 1.5rem;">Total Amount: <strong id="cartTotal" style="color: #111;">₹0</strong></div>
+          <div class="cart-page-actions">
+            <button class="btn btn-primary checkout-btn">💳 Secure Checkout</button>
+            <button id="cartWaBtn" class="btn btn-whatsapp" onclick="openWhatsAppOrder(event)">💬 WhatsApp Order</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <span class="logo-k">K</span>
+          <div class="logo-text">
+            <span class="logo-name">KASAUDHAN</span>
+            <span class="logo-sub">COLLECTION</span>
+          </div>
+        </div>
+        <p class="footer-desc">Premium Men's & Kids Fashion Store in Gadakul, Shohratgarh, Siddharthnagar, Uttar Pradesh.</p>
+        <div class="footer-social">
+          <a href="https://wa.me/919696824331" target="_blank" class="social-link" aria-label="WhatsApp">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="../index.html#home">Home</a></li>
+          <li><a href="../index.html#categories">Categories</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Info</h4>
+        <div class="footer-contact">
+          <div class="fc-item"><span>📞</span><div><a href="tel:9696824331">9696824331</a></div></div>
+          <div class="fc-item"><span>📍</span><p>Gadakul, Shohratgarh<br />Siddharthnagar, UP</p></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>© 2026 <strong>Kasaudhan Collection</strong>. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/cart.js"></script>
+  <!-- UPI Payment Modal -->
+  <div id="payment-modal" class="payment-overlay">
+    <div class="payment-card">
+      <button class="payment-close-btn" onclick="closePaymentModal()" aria-label="Close modal">✕</button>
+      
+      <!-- Main Payment View -->
+      <div id="payment-main-view">
+        <div class="payment-header">
+          <h3>🔒 Secure Payment</h3>
+          <p>Scan QR code to pay instantly</p>
+        </div>
+
+        <div class="payment-amount-box">
+          <span class="payment-amount-label">Total Amount</span>
+          <span class="payment-amount-value" id="modal-amount">₹0</span>
+        </div>
+
+        <div class="payment-qr-sec">
+          <span class="payment-qr-label">Scan & Pay via UPI</span>
+          <div id="upi-qr-container">
+          </div>
+        </div>
+
+        <div id="payment-status-box" 
+          style="text-align:center; 
+                 margin: 16px 0;">
+
+          <!-- Waiting state (default) -->
+          <div id="status-waiting">
+            <div class="payment-loader"></div>
+            <p style="font-size:13px; 
+                      color:#666; 
+                      margin:8px 0 0;">
+              Waiting for payment...
+            </p>
+            <p style="font-size:11px; 
+                      color:#999;
+                      margin:4px 0 0;">
+              Complete payment to get 
+              confirmation
+            </p>
+          </div>
+
+          <!-- Success state (hidden initially) -->
+          <div id="status-success" 
+            style="display:none;">
+            <div style="font-size:48px;">🎉</div>
+            <h3 style="color:#22c55e; 
+                       font-size:18px;
+                       font-weight:700;
+                       margin:8px 0 4px;">
+              Payment Confirmed!
+            </h3>
+            <p style="font-size:13px;
+                      color:#666;
+                      margin:0 0 4px;">
+              Your order has been placed 
+              successfully
+            </p>
+            <p style="font-size:12px;
+                      color:#999;">
+              We will contact you on 
+              WhatsApp soon 📱
+            </p>
+            <div style="margin-top:12px;
+                        background:#f0fff4;
+                        border:1px solid #c6f6d5;
+                        border-radius:10px;
+                        padding:10px;">
+              <p style="font-size:12px;
+                        color:#166534;
+                        margin:0;
+                        font-weight:600;">
+                Order ID: 
+                <span id="order-id"></span>
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="upi-apps-section">
+          <p class="upi-apps-label">Or open directly in</p>
+          <div class="upi-apps-row">
+            <a class="upi-app-link" href="gpay://upi/pay?pa=vishwakarmasagar8471-1@okaxis&pn=Kasaudhan+Collection&am=CART_TOTAL&cu=INR">GPay</a>
+            <a class="upi-app-link" href="phonepe://pay?pa=vishwakarmasagar8471-1@okaxis&pn=Kasaudhan+Collection&am=CART_TOTAL&cu=INR">PhonePe</a>
+            <a class="upi-app-link" href="paytmmp://pay?pa=vishwakarmasagar8471-1@okaxis&pn=Kasaudhan+Collection&am=CART_TOTAL&cu=INR">Paytm</a>
+          </div>
+        </div>
+
+        <div class="upi-id-box">
+          <div class="upi-id-info">
+            <span class="upi-id-label">UPI ID</span>
+            <span class="upi-id-val">vishwakarmasagar8471-1@okaxis</span>
+          </div>
+          <button id="copy-upi-btn" class="copy-btn" onclick="copyUpiId()">📋 Copy</button>
+        </div>
+
+        <div class="payment-divider"></div>
+
+        <div class="payment-actions">
+          <button class="payment-btn payment-btn-cancel" onclick="closePaymentModal()">Cancel</button>
+        </div>
+
+        <div class="payment-security-row">
+          🔒 100% Secure | ✓ UPI Verified | 🛡️ Safe Payment
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+  let paymentCheckInterval = null;
+  let paymentCheckCount = 0;
+  const MAX_CHECKS = 24; 
+  // Check for 2 minutes (24 x 5sec)
+
+  function generateOrderId() {
+    const timestamp = Date.now().toString().slice(-6);
+    const random = Math.floor(Math.random() * 1000).toString().padStart(3, '0');
+    return 'KC' + timestamp + random;
+  }
+
+  function startPaymentDetection() {
+    if (paymentCheckInterval) {
+      clearInterval(paymentCheckInterval);
+    }
+    paymentCheckCount = 0;
+    
+    // Store order ID
+    const orderId = generateOrderId();
+    document.getElementById('order-id').textContent = orderId;
+    
+    // Save to localStorage for tracking
+    localStorage.setItem(
+      'kc_pending_order', 
+      JSON.stringify({
+        orderId: orderId,
+        amount: getCartTotal(),
+        timestamp: Date.now(),
+        upiId: 'vishwakarmasagar8471-1@okaxis'
+      })
+    );
+    
+    // Start checking every 5 seconds
+    paymentCheckInterval = setInterval(checkPaymentStatus, 5000);
+  }
+
+  function checkPaymentStatus() {
+    paymentCheckCount++;
+    
+    // Method 1: Check if user came back to tab after being away (went to GPay/PhonePe app)
+    const wasHidden = sessionStorage.getItem('tab_was_hidden') === 'true';
+    
+    if (wasHidden && document.hidden === false) {
+      sessionStorage.removeItem('tab_was_hidden');
+      // User came back from payment app. Show confirmation after 2 seconds
+      setTimeout(() => {
+        showPaymentSuccess();
+      }, 2000);
+      return;
+    }
+    
+    // Stop checking after max attempts
+    if (paymentCheckCount >= MAX_CHECKS) {
+      clearInterval(paymentCheckInterval);
+      showManualConfirm();
+    }
+  }
+
+  // Detect when user leaves tab (goes to payment app)
+  document.addEventListener('visibilitychange', function() {
+    if (document.hidden) {
+      // User left tab (went to pay)
+      sessionStorage.setItem('tab_was_hidden', 'true');
+    } else if (
+      sessionStorage.getItem('tab_was_hidden') === 'true' &&
+      document.getElementById('payment-modal')?.style.display === 'flex'
+    ) {
+      // User came back to tab while modal is open
+      setTimeout(() => {
+        showPaymentSuccess();
+      }, 2000);
+      sessionStorage.removeItem('tab_was_hidden');
+    }
+  });
+
+  function showPaymentSuccess() {
+    clearInterval(paymentCheckInterval);
+    
+    // Hide waiting state
+    const waitingEl = document.getElementById('status-waiting');
+    if (waitingEl) waitingEl.style.display = 'none';
+    
+    // Show success state
+    const successEl = document.getElementById('status-success');
+    if (successEl) successEl.style.display = 'block';
+    
+    // Hide Cancel button and Close button
+    const cancelBtn = document.querySelector('.payment-btn-cancel');
+    if (cancelBtn) cancelBtn.style.display = 'none';
+    const closeBtn = document.querySelector('.payment-close-btn');
+    if (closeBtn) closeBtn.style.display = 'none';
+    
+    // Send WhatsApp notification
+    const orderId = document.getElementById('order-id').textContent;
+    const total = getCartTotal();
+    
+    const message = 
+      '🛍️ New Order Received!\n\n' +
+      'Order ID: ' + orderId + '\n' +
+      'Amount: ₹' + total + '\n' +
+      'Payment: UPI ✅\n' +
+      'UPI ID: vishwakarmasagar8471-1@okaxis\n\n' +
+      'Customer has completed payment.';
+    
+    // Auto-open WhatsApp after 3 seconds
+    setTimeout(() => {
+      window.open(
+        'https://wa.me/919696824331?text=' + encodeURIComponent(message),
+        '_blank'
+      );
+      
+      // Clear cart and close modal after 5 seconds
+      setTimeout(() => {
+        localStorage.setItem('kc_cart', '[]');
+        if (window.cart) {
+          window.cart = [];
+        }
+        if (typeof updateCartBadge === 'function') updateCartBadge();
+        if (typeof renderCartItems === 'function') renderCartItems();
+        
+        localStorage.removeItem('kc_pending_order');
+        closePaymentModal();
+      }, 2000);
+      
+    }, 3000);
+  }
+
+  function showManualConfirm() {
+    const waitingEl = document.getElementById('status-waiting');
+    if (waitingEl) {
+      waitingEl.innerHTML = `
+        <p style="font-size:12px; color:#999; text-align:center; margin:8px 0 0;">
+          Payment completed?<br>Please send us a screenshot on WhatsApp to confirm.
+        </p>
+        <a href="https://wa.me/919696824331" target="_blank"
+           style="display:block; text-align:center; color:#22c55e; font-size:13px; font-weight:600; margin-top:8px; text-decoration:none;">
+          📱 Send Screenshot on WhatsApp
+        </a>
+      `;
+    }
+  }
+
+  function getCartTotal() {
+    // Try all possible selectors
+    const selectors = [
+      '#cartTotal',
+      '#cart-total',
+      '#total-amount', 
+      '.cart-total',
+      '.total-amount',
+      '.cart-total-amount',
+      '.order-total',
+      '[class*="total-price"]',
+      '[class*="cart-total"]',
+      '[class*="total-amount"]',
+      '[id*="total"]',
+      '.summary-total',
+      '.checkout-total'
+    ];
+    
+    for (let selector of selectors) {
+      const el = document.querySelector(selector);
+      if (el) {
+        const text = el.textContent
+          .replace(/[^0-9.]/g, '')
+          .trim();
+        if (text && text !== '0' && text !== '') {
+          console.log('Found total:', text, 'using selector:', selector);
+          return text;
+        }
+      }
+    }
+    
+    // Last resort: find any element containing ₹ symbol
+    const allElements = document.querySelectorAll('*');
+    for (let el of allElements) {
+      if (el.children.length === 0 && 
+          el.textContent.includes('₹') &&
+          el.textContent.includes(',')) {
+        const text = el.textContent
+          .replace(/[^0-9.]/g, '')
+          .trim();
+        if (text && parseInt(text) > 100) {
+          console.log('Found total via ₹ search:', text);
+          return text;
+        }
+      }
+    }
+    
+    return '0';
+  }
+
+  function generateQR(amount) {
+    const container = document.getElementById('upi-qr-container');
+    const qrUrl = "https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=" + 
+      encodeURIComponent(
+        "upi://pay?pa=vishwakarmasagar8471-1@okaxis&pn=Kasaudhan Collection&am=" + amount + "&cu=INR&tn=Order Payment"
+      );
+    
+    container.innerHTML = '<img id="upi-qr" src="' + qrUrl + '" alt="UPI QR Code">';
+  }
+
+  function openPaymentModal() {
+    const total = getCartTotal();
+    console.log('Cart total found:', total);
+    
+    // Update amount display in modal
+    const amountEl = document.getElementById('modal-amount');
+    if (amountEl) {
+      amountEl.textContent = '₹' + 
+        parseInt(total || 0).toLocaleString('en-IN');
+    }
+    
+    // Generate fresh QR with actual amount
+    generateQR(total || '1');
+    
+    // Update UPI app links
+    document.querySelectorAll('.upi-app-link')
+      .forEach(link => {
+        const baseHref = link.getAttribute('data-base-href') || link.href;
+        if (!link.getAttribute('data-base-href')) {
+          link.setAttribute('data-base-href', baseHref);
+        }
+        link.href = baseHref.replace('CART_TOTAL', total);
+      });
+    
+    // Reset views inside card
+    document.getElementById('payment-main-view').style.display = 'block';
+    
+    // Reset to waiting state
+    const waitingEl = document.getElementById('status-waiting');
+    if (waitingEl) {
+      waitingEl.style.display = 'block';
+      waitingEl.innerHTML = `
+        <div class="payment-loader"></div>
+        <p style="font-size:13px; color:#666; margin:8px 0 0;">
+          Waiting for payment...
+        </p>
+        <p style="font-size:11px; color:#999; margin:4px 0 0;">
+          Complete payment to get confirmation
+        </p>
+      `;
+    }
+    
+    const successEl = document.getElementById('status-success');
+    if (successEl) {
+      successEl.style.display = 'none';
+    }
+    
+    const cancelBtn = document.querySelector('.payment-btn-cancel');
+    if (cancelBtn) {
+      cancelBtn.style.display = 'block';
+    }
+    
+    const closeBtn = document.querySelector('.payment-close-btn');
+    if (closeBtn) {
+      closeBtn.style.display = 'flex';
+    }
+
+    // Show modal
+    const modal = document.getElementById('payment-modal');
+    if (modal) {
+      modal.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    }
+
+    // Start auto-detection
+    startPaymentDetection();
+  }
+
+  // Attach to checkout button
+  document.querySelector(
+    '.checkout-btn, [class*="checkout"], [id*="checkout"], button[class*="secure"]'
+  )?.addEventListener('click', function(e) {
+    e.preventDefault();
+    
+    // Small delay to ensure cart total is calculated
+    setTimeout(() => {
+      openPaymentModal();
+    }, 100);
+  });
+
+  // Close modal functions
+  function closePaymentModal() {
+    if (paymentCheckInterval) {
+      clearInterval(paymentCheckInterval);
+    }
+    document.getElementById('payment-modal')
+      .style.display = 'none';
+    document.body.style.overflow = '';
+  }
+
+  // Close on overlay click
+  document.getElementById('payment-modal')
+    ?.addEventListener('click', function(e) {
+      if (e.target === this) {
+        closePaymentModal();
+      }
+    });
+
+  // Close on ESC key
+  document.addEventListener('keydown', 
+    function(e) {
+      if (e.key === 'Escape') {
+        closePaymentModal();
+      }
+    }
+  );
+
+  // Copy UPI ID
+  function copyUpiId() {
+    navigator.clipboard.writeText(
+      'vishwakarmasagar8471-1@okaxis'
+    ).then(() => {
+      const btn = document.getElementById(
+        'copy-upi-btn'
+      );
+      btn.textContent = '✓ Copied!';
+      btn.style.color = '#22c55e';
+      setTimeout(() => {
+        btn.textContent = '📋 Copy';
+        btn.style.color = '';
+      }, 2000);
+    });
+  }
+
+  function openWhatsAppOrder(e) {
+    if (e) e.preventDefault();
+    const total = getCartTotal();
+    const message = 
+      'Hello Kasaudhan Collection! 👋\n\n' +
+      'I want to place an order.\n' +
+      'Cart Total: ₹' + total + '\n' +
+      'Payment: UPI (QR Code)\n\n' +
+      'Please confirm my order. 🙏';
+    
+    window.open(
+      'https://wa.me/919696824331?text=' +
+      encodeURIComponent(message),
+      '_blank'
+    );
+  }
+  </script>
+</body>
+</html>

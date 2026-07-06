@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>Gallery – Kasaudhan Collection</title>
+  <meta name="description" content="Kasaudhan Collection – Premium Men's & Kids Fashion Store in Gadakul, Shohratgarh, Siddharthnagar, Uttar Pradesh. Shop stylish jeans, shirts, T-shirts, kids wear, lowers, belts & slippers at affordable prices. Call 9696824331." />
+  <meta name="keywords" content="Kasaudhan Collection, Men's Wear Shop Shohratgarh, Kids Wear Shop Shohratgarh, Clothing Store Gadakul, Fashion Store Siddharthnagar, Jeans Shop Near Me, Shirt Shop Shohratgarh, Affordable Clothing Shop, Men's Fashion Uttar Pradesh, Kids Fashion Store" />
+  <meta name="author" content="Anoop Kasaudhan" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://kasaudhan-collection.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Kasaudhan Collection – Style That Defines You" />
+  <meta property="og:description" content="Premium Men's & Kids Fashion Store in Gadakul, Shohratgarh. Jeans, Shirts, T-Shirts, Kids Wear & more at affordable prices." />
+  <meta property="og:image" content="../assets/images/store_hero.jpg" />
+  <meta property="og:url" content="https://kasaudhan-collection.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_IN" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Kasaudhan Collection – Style That Defines You" />
+  <meta name="twitter:description" content="Premium Men's & Kids Fashion Store in Gadakul, Shohratgarh." />
+  <meta name="twitter:image" content="../assets/images/store_hero.jpg" />
+
+  <!-- Preconnect Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Leaflet Map -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="../css/style.css" />
+
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ClothingStore",
+    "name": "Kasaudhan Collection",
+    "description": "Premium Men's & Kids Fashion Store offering stylish and affordable clothing including jeans, shirts, T-shirts, kids wear, lowers, belts and slippers.",
+    "url": "https://kasaudhan-collection.com",
+    "telephone": ["+919696824331", "+918840066738"],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Gadakul",
+      "addressLocality": "Shohratgarh",
+      "addressRegion": "Uttar Pradesh",
+      "addressCountry": "IN",
+      "postalCode": "272205"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 27.1267,
+      "longitude": 82.8732
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+        "opens": "09:00",
+        "closes": "21:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Sunday",
+        "opens": "10:00",
+        "closes": "20:00"
+      }
+    ],
+    "founder": {
+      "@type": "Person",
+      "name": "Anoop Kasaudhan"
+    },
+    "priceRange": "₹299 - ₹2999",
+    "servesCuisine": "Men's & Kids Fashion"
+  }
+  </script>
+  <link rel="stylesheet" href="../css/gallery.css" />
+
+  <link rel="icon" type="image/x-icon" href="../favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <meta name="theme-color" content="#111111">
+</head>
+<body>
+
+
+
+
+  <!-- ===== OFFER BANNER ===== -->
+  <div id="offerBanner" class="offer-banner">
+    <p>🎉 <strong>Festival Sale LIVE!</strong> Up to 40% OFF on all items — Limited Time Offer &nbsp;|&nbsp; 📞 Call: 9696824331</p>
+    <button id="closeBanner" class="banner-close" aria-label="Close banner">✕</button>
+  </div>
+
+  <!-- ===== SCROLL PROGRESS BAR ===== -->
+  <div id="scrollProgress" class="scroll-progress"></div>
+
+  <!-- ===== STICKY HEADER ===== -->
+  <header id="header" class="header">
+    <div class="header-inner">
+      <!-- Left Section: Logo -->
+      <a href="../index.html#home" class="logo" aria-label="Kasaudhan Collection Home">
+        <span class="logo-k">K</span>
+        <div class="logo-text">
+          <span class="logo-name">KASAUDHAN</span>
+          <span class="logo-sub">COLLECTION</span>
+        </div>
+      </a>
+
+      <!-- Center Section: Desktop Navigation -->
+      <nav class="nav-desktop" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="../index.html#home" class="nav-link">Home</a></li>
+          <li><a href="../index.html#categories" class="nav-link">Categories</a></li>
+          <li><a href="products.html" class="nav-link">Products</a></li>
+          <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+          <li><a href="../index.html#about" class="nav-link">About</a></li>
+          <li><a href="../index.html#reviews" class="nav-link">Reviews</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right Section: Actions -->
+      <div class="header-actions">
+        <button id="searchToggle" class="icon-btn" aria-label="Search">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </button>
+        <button id="cartToggle" class="icon-btn cart-btn" aria-label="Shopping Cart">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+          <span class="cart-badge" id="cartCount">0</span>
+        </button>
+        <a href="products.html" class="btn btn-shop">Shop Now</a>
+        <button id="menuToggle" class="icon-btn menu-btn" aria-label="Open Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Search Bar -->
+    <div id="searchBar" class="search-bar" hidden>
+      <div class="search-container">
+        <input type="search" id="searchInput" placeholder="Search jeans, shirts, kids wear..." class="search-input" aria-label="Search products" autocomplete="off" />
+        <button id="searchClose" class="search-close" aria-label="Close search">✕</button>
+      </div>
+      <div id="searchResults" class="search-results"></div>
+    </div>
+
+    <!-- Mobile Nav Drawer -->
+    <div id="mobileOverlay" class="mobile-overlay" aria-hidden="true" hidden></div>
+    <nav id="mobileNav" class="nav-mobile" aria-label="Mobile Navigation" hidden>
+      <div class="mobile-nav-header">
+        <a href="../index.html#home" class="logo mobile-logo" aria-label="Home">
+          <span class="logo-k">K</span>
+          <div class="logo-text">
+            <span class="logo-name">KASAUDHAN</span>
+            <span class="logo-sub">COLLECTION</span>
+          </div>
+        </a>
+        <button id="mobileClose" class="icon-btn mobile-close" aria-label="Close Menu">✕</button>
+      </div>
+      
+      <div class="mobile-nav-actions">
+        <button class="icon-btn mobile-search-btn" aria-label="Search">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          Search
+        </button>
+        <button class="icon-btn cart-btn mobile-cart-btn" aria-label="Cart">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+          Cart <span class="cart-badge" id="mobileCartCount">0</span>
+        </button>
+      </div>
+
+      <ul class="mobile-nav-list">
+        <li><a href="../index.html#home" class="mobile-nav-link">Home</a></li>
+        <li><a href="../index.html#categories" class="mobile-nav-link">Categories</a></li>
+        <li><a href="products.html" class="mobile-nav-link">Products</a></li>
+        <li><a href="gallery.html" class="mobile-nav-link active">Gallery</a></li>
+        <li><a href="../index.html#about" class="mobile-nav-link">About</a></li>
+        <li><a href="../index.html#reviews" class="mobile-nav-link">Reviews</a></li>
+        <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+      </ul>
+      
+      <div class="mobile-nav-ctas">
+        <a href="#products" class="btn btn-shop w-full mobile-shop-btn">Shop Now</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ===== GALLERY HERO ===== -->
+  <section class="gallery-hero">
+    <div class="gallery-hero-overlay"></div>
+    <div class="gallery-hero-content container">
+      <h1 class="page-title">Gallery</h1>
+      <p class="page-subtitle">Explore Our Latest Fashion Collection</p>
+    </div>
+  </section>
+
+  <!-- ===== FLASH SALE SECTION ===== -->
+  <section class="flash-sale-section">
+    <!-- Timer Bar -->
+    <div class="timer-bar text-center">
+      <span class="timer-text">Sale starts in</span>
+      <div id="flashTimer" class="timer-countdown">
+        <div class="timer-box"><span id="t-hours">06</span></div>
+        <span class="timer-colon">:</span>
+        <div class="timer-box"><span id="t-minutes">34</span></div>
+        <span class="timer-colon">:</span>
+        <div class="timer-box"><span id="t-seconds">49</span></div>
+      </div>
+      <div id="flashLive" class="timer-live hidden">Sale is LIVE! 🔥</div>
+    </div>
+
+    <!-- Category Bubbles -->
+    <style>
+    .category-bubbles-scroll > a { transition: transform 0.3s ease; }
+    .category-bubbles-scroll > a:hover { transform: scale(1.05); }
+    </style>
+    <div class="category-bubbles-wrapper">
+      <div class="category-bubbles-scroll">
+        <!-- ROW 1 -->
+        <a href="products.html?category=deals" style="text-decoration:none; color:inherit; display:block; cursor:pointer;">
+<div class="bubble-item">
+          <div class="bubble-square bubble-thunder">
+            <span>THUNDER<br>DEALS</span>
+          </div>
+          <span class="bubble-label">Thunder Deals</span>
+        </div>
+</a>
+        <a href="products.html?category=jeans" style="text-decoration:none; color:inherit; display:block; cursor:pointer;">
+<div class="bubble-item">
+          <div class="bubble-square bg-pastel-1">
+            <img src="../images/gallery/shop/shop02.webp" alt="Jeans" loading="lazy">
+          </div>
+          <span class="bubble-label">Jeans</span>
+        </div>
+</a>
+        <a href="products.html?category=shirts" style="text-decoration:none; color:inherit; display:block; cursor:pointer;">
+<div class="bubble-item">
+          <div class="bubble-square bg-pastel-2">
+            <img src="../images/gallery/shop/shop03.webp" alt="Shirts" loading="lazy">
+          </div>
+          <span class="bubble-label">Shirts</span>
+        </div>
+</a>
+        <a href="products.html?category=tshirts" style="text-decoration:none; color:inherit; display:block; cursor:pointer;">
+<div class="bubble-item">
+          <div class="bubble-square bg-pastel-3">
+            <img src="../images/gallery/shop/shop04.webp" alt="T-Shirts" loading="lazy">
+          </div>
+          <span class="bubble-label">T-Shirts</span>
+        </div>
+</a>
+        <a href="products.html?category=lowers" style="text-decoration:none; color:inherit; display:block; cursor:pointer;">
+<div class="bubble-item">
+          <div class="bubble-square bg-pastel-4">
+            <img src="../images/gallery/shop/shop05.webp" alt="Lowers" loading="lazy">
+          </div>
+          <span class="bubble-label">Lowers</span>
+        </div>
+</a>
+        <a href="products.html?category=kids-wear" style="text-decoration:none; color:inherit; display:block; cursor:pointer;">
+<div class="bubble-item">
+          <div class="bubble-square bg-pastel-5">
+            <img src="../images/gallery/shop/shop06.webp" alt="Kids Wear" loading="lazy">
+          </div>
+          <span class="bubble-label">Kids Wear</span>
+        </div>
+</a>
+        <a href="products.html?category=accessories" style="text-decoration:none; color:inherit; display:block; cursor:pointer;">
+<div class="bubble-item">
+          <div class="bubble-square bg-pastel-6">
+            <img src="../images/gallery/shop/shop07.webp" alt="Accessories" loading="lazy">
+          </div>
+          <span class="bubble-label">Accessories</span>
+        </div>
+</a>
+        <a href="products.html?category=winter" style="text-decoration:none; color:inherit; display:block; cursor:pointer;">
+<div class="bubble-item">
+          <div class="bubble-square bg-pastel-7">
+            <img src="../images/gallery/shop/shop08.webp" alt="Winter Collect" loading="lazy">
+          </div>
+          <span class="bubble-label">Winter Collect</span>
+        </div>
+</a>
+
+        <!-- ROW 2 -->
+        <a href="products.html?category=new-arrivals" style="text-decoration:none; color:inherit; display:block; cursor:pointer;">
+<div class="bubble-item">
+          <div class="bubble-square bg-pastel-8">
+            <img src="../images/gallery/shop/shop01.webp" alt="New Arrivals" loading="lazy">
+          </div>
+          <span class="bubble-label">New Arrivals</span>
+        </div>
+</a>
+        <a href="products.html?category=casual-wear" style="text-decoration:none; color:inherit; display:block; cursor:pointer;">
+<div class="bubble-item">
+          <div class="bubble-square bg-pastel-9">
+            <img src="../images/gallery/shop/shop02.webp" alt="Casual Wear" loading="lazy">
+          </div>
+          <span class="bubble-label">Casual Wear</span>
+        </div>
+</a>
+        <a href="products.html?category=formal-wear" style="text-decoration:none; color:inherit; display:block; cursor:pointer;">
+<div class="bubble-item">
+          <div class="bubble-square bg-pastel-10">
+            <img src="../images/gallery/shop/shop03.webp" alt="Formal Wear" loading="lazy">
+          </div>
+          <span class="bubble-label">Formal Wear</span>
+        </div>
+</a>
+        <a href="products.html?category=ethnic-wear" style="text-decoration:none; color:inherit; display:block; cursor:pointer;">
+<div class="bubble-item">
+          <div class="bubble-square bg-pastel-1">
+            <img src="../images/gallery/shop/shop04.webp" alt="Ethnic Wear" loading="lazy">
+          </div>
+          <span class="bubble-label">Ethnic Wear</span>
+        </div>
+</a>
+        <a href="products.html?category=footwear" style="text-decoration:none; color:inherit; display:block; cursor:pointer;">
+<div class="bubble-item">
+          <div class="bubble-square bg-pastel-2">
+            <img src="../images/gallery/shop/shop05.webp" alt="Footwear" loading="lazy">
+          </div>
+          <span class="bubble-label">Footwear</span>
+        </div>
+</a>
+        <a href="products.html?category=bags" style="text-decoration:none; color:inherit; display:block; cursor:pointer;">
+<div class="bubble-item">
+          <div class="bubble-square bg-pastel-3">
+            <img src="../images/gallery/shop/shop06.webp" alt="Bags" loading="lazy">
+          </div>
+          <span class="bubble-label">Bags</span>
+        </div>
+</a>
+        <a href="products.html?category=watches" style="text-decoration:none; color:inherit; display:block; cursor:pointer;">
+<div class="bubble-item">
+          <div class="bubble-square bg-pastel-4">
+            <img src="../images/gallery/shop/shop07.webp" alt="Watches" loading="lazy">
+          </div>
+          <span class="bubble-label">Watches</span>
+        </div>
+</a>
+        <a href="products.html?category=trending" style="text-decoration:none; color:inherit; display:block; cursor:pointer;">
+<div class="bubble-item">
+          <div class="bubble-square bg-pastel-5">
+            <img src="../images/gallery/shop/shop08.webp" alt="Trending Now" loading="lazy">
+          </div>
+          <span class="bubble-label">Trending Now</span>
+        </div>
+</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALLERY SECTION ===== -->
+  <section class="gallery-section container">
+    
+    <!-- STATIC GRID -->
+    <div class="gallery-grid-static">
+      <div class="gallery-item" onclick="openLightbox(0)">
+        <img src="../images/gallery/shop/shop01.webp" alt="Shop 1" loading="lazy" onerror="this.src='images/gallery/shop/store.webp'">
+        <div class="gallery-overlay">
+          <div class="gallery-overlay-icon">🔍</div>
+          <span class="gallery-cat-badge">Shop</span>
+        </div>
+        <div class="mobile-grid-label">Shop 1</div>
+      </div>
+      <div class="gallery-item" onclick="openLightbox(1)">
+        <img src="../images/gallery/shop/shop02.webp" alt="Shop 2" loading="lazy" onerror="this.src='images/gallery/shop/store.webp'">
+        <div class="gallery-overlay">
+          <div class="gallery-overlay-icon">🔍</div>
+          <span class="gallery-cat-badge">Shop</span>
+        </div>
+        <div class="mobile-grid-label">Shop 2</div>
+      </div>
+      <div class="gallery-item" onclick="openLightbox(2)">
+        <img src="../images/gallery/shop/shop03.webp" alt="Shop 3" loading="lazy" onerror="this.src='images/gallery/shop/store.webp'">
+        <div class="gallery-overlay">
+          <div class="gallery-overlay-icon">🔍</div>
+          <span class="gallery-cat-badge">Shop</span>
+        </div>
+        <div class="mobile-grid-label">Shop 3</div>
+      </div>
+      <div class="gallery-item" onclick="openLightbox(3)">
+        <img src="../images/gallery/shop/shop04.webp" alt="Shop 4" loading="lazy" onerror="this.src='images/gallery/shop/store.webp'">
+        <div class="gallery-overlay">
+          <div class="gallery-overlay-icon">🔍</div>
+          <span class="gallery-cat-badge">Shop</span>
+        </div>
+        <div class="mobile-grid-label">Shop 4</div>
+      </div>
+      <div class="gallery-item" onclick="openLightbox(4)">
+        <img src="../images/gallery/shop/shop05.webp" alt="Shop 5" loading="lazy" onerror="this.src='images/gallery/shop/store.webp'">
+        <div class="gallery-overlay">
+          <div class="gallery-overlay-icon">🔍</div>
+          <span class="gallery-cat-badge">Shop</span>
+        </div>
+        <div class="mobile-grid-label">Shop 5</div>
+      </div>
+      <div class="gallery-item" onclick="openLightbox(5)">
+        <img src="../images/gallery/shop/shop06.webp" alt="Shop 6" loading="lazy" onerror="this.src='images/gallery/shop/store.webp'">
+        <div class="gallery-overlay">
+          <div class="gallery-overlay-icon">🔍</div>
+          <span class="gallery-cat-badge">Shop</span>
+        </div>
+        <div class="mobile-grid-label">Shop 6</div>
+      </div>
+      <div class="gallery-item" onclick="openLightbox(6)">
+        <img src="../images/gallery/shop/shop07.webp" alt="Shop 7" loading="lazy" onerror="this.src='images/gallery/shop/store.webp'">
+        <div class="gallery-overlay">
+          <div class="gallery-overlay-icon">🔍</div>
+          <span class="gallery-cat-badge">Shop</span>
+        </div>
+        <div class="mobile-grid-label">Shop 7</div>
+      </div>
+      <div class="gallery-item" onclick="openLightbox(7)">
+        <img src="../images/gallery/shop/shop08.webp" alt="Shop 8" loading="lazy" onerror="this.src='images/gallery/shop/store.webp'">
+        <div class="gallery-overlay">
+          <div class="gallery-overlay-icon">🔍</div>
+          <span class="gallery-cat-badge">Shop</span>
+        </div>
+        <div class="mobile-grid-label">Shop 8</div>
+      </div>
+    </div>
+
+    <!-- VIDEO CAROUSEL -->
+    <div class="video-carousel-wrapper">
+      <div class="video-carousel-track">
+        <!-- Set 1 -->
+        <div class="portrait-video-item">
+          <video src="../videos/gallery/opening.mp4" autoplay loop muted playsinline></video>
+          <span class="video-label">Shop Tour</span>
+        </div>
+        <div class="portrait-video-item">
+          <video src="../videos/gallery/opening.mp4" autoplay loop muted playsinline></video>
+          <span class="video-label">Collection 01</span>
+        </div>
+        <div class="portrait-video-item">
+          <video src="../videos/gallery/opening.mp4" autoplay loop muted playsinline></video>
+          <span class="video-label">Collection 02</span>
+        </div>
+        <!-- Set 2 -->
+        <div class="portrait-video-item">
+          <video src="../videos/gallery/opening.mp4" autoplay loop muted playsinline></video>
+          <span class="video-label">Shop Tour</span>
+        </div>
+        <div class="portrait-video-item">
+          <video src="../videos/gallery/opening.mp4" autoplay loop muted playsinline></video>
+          <span class="video-label">Collection 01</span>
+        </div>
+        <div class="portrait-video-item">
+          <video src="../videos/gallery/opening.mp4" autoplay loop muted playsinline></video>
+          <span class="video-label">Collection 02</span>
+        </div>
+        <!-- Set 3 -->
+        <div class="portrait-video-item">
+          <video src="../videos/gallery/opening.mp4" autoplay loop muted playsinline></video>
+          <span class="video-label">Shop Tour</span>
+        </div>
+        <div class="portrait-video-item">
+          <video src="../videos/gallery/opening.mp4" autoplay loop muted playsinline></video>
+          <span class="video-label">Collection 01</span>
+        </div>
+        <div class="portrait-video-item">
+          <video src="../videos/gallery/opening.mp4" autoplay loop muted playsinline></video>
+          <span class="video-label">Collection 02</span>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ===== FESTIVE OFFERS SECTION ===== -->
+  <section class="festive-offers-section container">
+    <div class="section-header text-center">
+      <h2>🎉 Festive Offers & Deals</h2>
+      <p>Limited time offers — grab them fast!</p>
+    </div>
+    <div class="offers-grid compact-grid">
+      <!-- Card 1 -->
+      <div class="offer-tag bg-grad-1 fade-in-up">
+        <span class="tag-badge">🔥 HOT DEAL</span>
+        <div class="tag-title">30% OFF</div>
+        <div class="tag-sub">On All Jeans</div>
+      </div>
+      <!-- Card 2 -->
+      <div class="offer-tag bg-grad-2 fade-in-up" style="transition-delay: 0.1s">
+        <span class="tag-badge">🎉 FESTIVE</span>
+        <div class="tag-title">BUY 2 GET 1 FREE</div>
+        <div class="tag-sub">On All T-Shirts</div>
+      </div>
+      <!-- Card 3 -->
+      <div class="offer-tag bg-grad-3 fade-in-up" style="transition-delay: 0.2s">
+        <span class="tag-badge">⏳ LIMITED</span>
+        <div class="tag-title">50% OFF</div>
+        <div class="tag-sub">On Winter Collection</div>
+      </div>
+      <!-- Card 4 -->
+      <div class="offer-tag bg-grad-4 fade-in-up" style="transition-delay: 0.3s">
+        <span class="tag-badge">✨ SPECIAL</span>
+        <div class="tag-title">20% OFF</div>
+        <div class="tag-sub">On Kids Wear</div>
+      </div>
+      <!-- Card 5 -->
+      <div class="offer-tag bg-grad-5 fade-in-up" style="transition-delay: 0.4s">
+        <span class="tag-badge">⭐ NEW</span>
+        <div class="tag-title">FREE DELIVERY</div>
+        <div class="tag-sub">On Orders Above ₹999</div>
+      </div>
+      <!-- Card 6 -->
+      <div class="offer-tag bg-grad-6 fade-in-up" style="transition-delay: 0.5s">
+        <span class="tag-badge">⚡ TODAY ONLY</span>
+        <div class="tag-title">40% OFF</div>
+        <div class="tag-sub">On Accessories</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SHOP TOUR SECTION ===== -->
+  <section class="shop-tour-section container">
+    <div class="shop-tour-inner">
+      <div class="shop-tour-video">
+        <video controls poster="../images/gallery/shop/store.webp">
+          <source src="../videos/gallery/opening.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="shop-tour-info">
+        <h2>Visit Our Store</h2>
+        <p>Take a virtual tour of our clothing store and explore our latest collections.</p>
+        <div class="shop-tour-btns">
+          <a href="https://www.google.com/maps/search/Gadakul+Shohratgarh" target="_blank" class="btn btn-primary">Visit Store</a>
+          <a href="https://wa.me/919696824331?text=Hello%20Kasaudhan%20Collection,%20I%20saw%20your%20Gallery%20and%20would%20like%20more%20information%20about%20this%20product." target="_blank" class="btn btn-whatsapp">WhatsApp</a>
+          <a href="tel:9696824331" class="btn btn-outline-dark">Call Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CUSTOM LIGHTBOX ===== -->
+  <div id="galleryLightbox" class="gallery-lightbox" hidden>
+    <div class="glb-backdrop" id="glbBackdrop"></div>
+    <div class="glb-content">
+      <button class="glb-close" id="glbClose" aria-label="Close">✕</button>
+      <div class="glb-counter" id="glbCounter">1 / 10</div>
+      
+      <button class="glb-nav glb-prev" id="glbPrev" aria-label="Previous">‹</button>
+      
+      <div class="glb-media-container" id="glbMediaContainer">
+        <!-- Image or Video injected here -->
+      </div>
+      
+      <button class="glb-nav glb-next" id="glbNext" aria-label="Next">›</button>
+      
+      <div class="glb-caption" id="glbCaption">Title</div>
+    </div>
+  </div>
+
+<!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <span class="logo-k">K</span>
+          <div class="logo-text">
+            <span class="logo-name">KASAUDHAN</span>
+            <span class="logo-sub">COLLECTION</span>
+          </div>
+        </div>
+        <p class="footer-desc">Premium Men's & Kids Fashion Store in Gadakul, Shohratgarh, Siddharthnagar, Uttar Pradesh. Affordable prices, quality fabric, friendly service.</p>
+        <div class="footer-social">
+          <a href="https://wa.me/919696824331" target="_blank" class="social-link" aria-label="WhatsApp">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </a>
+          <a href="tel:9696824331" class="social-link" aria-label="Call">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.16 6.16l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          </a>
+          <a href="https://www.google.com/maps/search/Gadakul+Shohratgarh+Siddharthnagar+Uttar+Pradesh" target="_blank" class="social-link" aria-label="Location">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="../index.html#home">Home</a></li>
+          <li><a href="../index.html#categories">Categories</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="../index.html#about">About Us</a></li>
+          <li><a href="../index.html#reviews">Reviews</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Collections</h4>
+        <ul>
+          <li><a href="products.html">👖 Jeans</a></li>
+          <li><a href="products.html">👕 Shirts</a></li>
+          <li><a href="products.html">👕 T-Shirts</a></li>
+          <li><a href="products.html">🩳 Lowers</a></li>
+          <li><a href="products.html">👦 Kids Wear</a></li>
+          <li><a href="products.html">👔 Belts</a></li>
+          <li><a href="products.html">🩴 Slippers</a></li>
+          <li><a href="products.html">🧥 Winter Wear</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact Info</h4>
+        <div class="footer-contact">
+          <div class="fc-item">
+            <span>📞</span>
+            <div>
+              <a href="tel:9696824331">9696824331</a><br />
+              <a href="tel:8840066738">8840066738</a>
+            </div>
+          </div>
+          <div class="fc-item">
+            <span>📍</span>
+            <p>Gadakul, Shohratgarh<br />Siddharthnagar, UP</p>
+          </div>
+          <div class="fc-item">
+            <span>🕐</span>
+            <p>Mon–Sat: 9AM–9PM<br />Sun: 10AM–8PM</p>
+          </div>
+          <div class="fc-item">
+            <span>👤</span>
+            <p>Owner: Anoop Kasaudhan</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>© 2026 <strong>Kasaudhan Collection</strong>. All Rights Reserved. Designed with ❤️</p>
+        <p class="footer-seo">Men's & Kids Fashion Store | Gadakul, Shohratgarh, Siddharthnagar, Uttar Pradesh</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== FLOATING BUTTONS ===== -->
+  <div class="floating-buttons">
+    <a href="https://wa.me/919696824331?text=Hello%20Kasaudhan%20Collection!%20I%20want%20to%20inquire%20about%20your%20products." target="_blank" class="float-btn float-wa" title="WhatsApp Us" aria-label="WhatsApp">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      <span class="float-label">WhatsApp</span>
+    </a>
+    <a href="tel:9696824331" class="float-btn float-call" title="Call Us" aria-label="Call Now">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.16 6.16l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+      <span class="float-label">Call</span>
+    </a>
+    <button id="backToTop" class="float-btn float-top" onclick="scrollToTop()" title="Back to Top" aria-label="Back to top" hidden>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+    </button>
+  </div>
+
+  <!-- ===== MOBILE BOTTOM NAV ===== -->
+  <nav class="mobile-bottom-nav" aria-label="Mobile Bottom Navigation">
+    <a href="../index.html#home" class="mbn-item active" id="mbn-home">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      <span>Home</span>
+    </a>
+    <a href="products.html" class="mbn-item" id="mbn-products">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/></svg>
+      <span>Shop</span>
+    </a>
+    <a href="https://wa.me/919696824331" target="_blank" class="mbn-item mbn-wa">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      <span>Order</span>
+    </a>
+    <a href="gallery.html" class="mbn-item" id="mbn-gallery">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+      <span>Gallery</span>
+    </a>
+    <a href="contact.html" class="mbn-item" id="mbn-contact">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.16 6.16l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+      <span>Contact</span>
+    </a>
+  </nav>
+
+  <!-- ===== CART DRAWER ===== -->
+  <div id="cartDrawer" class="cart-drawer" hidden>
+    <div class="cart-header">
+      <h3>🛒 Your Cart</h3>
+      <button onclick="closeCart()" class="cart-drawer-close">✕</button>
+    </div>
+    <div class="cart-body" id="cartBody">
+      <div class="cart-empty">
+        <p>🛒 Your cart is empty</p>
+        <p>Add items from the products section!</p>
+      </div>
+    </div>
+    <div class="cart-footer" id="cartFooter" hidden>
+      <div class="cart-total">Total: <strong id="cartTotal">₹0</strong></div>
+      <button onclick="checkoutViaWhatsApp()" class="btn btn-whatsapp btn-full">💬 Checkout via WhatsApp</button>
+    </div>
+  </div>
+  <div id="cartBackdrop" class="cart-backdrop" onclick="closeCart()" hidden></div>
+
+  <!-- ===== LIGHTBOX ===== -->
+  <div id="lightbox" class="lightbox" hidden>
+    <div class="lightbox-inner">
+      <button class="lb-close" onclick="closeLightbox()" aria-label="Close">✕</button>
+      <button class="lb-prev" onclick="lightboxNav(-1)" aria-label="Previous">‹</button>
+      <button class="lb-next" onclick="lightboxNav(1)" aria-label="Next">›</button>
+      <img id="lbImg" src="" alt="Gallery Image" class="lb-img" />
+      <p id="lbCaption" class="lb-caption"></p>
+    </div>
+  </div>
+
+  <!-- ===== QUICK VIEW MODAL ===== -->
+  <div id="quickViewModal" class="quickview-modal" hidden>
+    <div class="qv-inner">
+      <button onclick="closeQuickView()" class="qv-close">✕</button>
+      <div class="qv-content" id="qvContent"></div>
+    </div>
+  </div>
+  <div id="qvBackdrop" class="qv-backdrop" onclick="closeQuickView()" hidden></div>
+
+  <!-- ===== FESTIVAL POPUP ===== -->
+  <!-- Backdrop (separate from popup for correct stacking) -->
+  <div id="fpBackdrop" class="fp-backdrop" role="presentation" aria-hidden="true"></div>
+
+  <!-- Popup -->
+  <div id="festivalPopup" class="festival-popup" role="dialog" aria-modal="true" aria-labelledby="fpTitle">
+    <div class="fp-inner" id="fpInner">
+      <!-- Close button -->
+      <button id="fpClose" class="fp-close" aria-label="Close festival sale popup">✕</button>
+
+      <div class="fp-content">
+        <span class="fp-emoji">🎊</span>
+        <h2 id="fpTitle">Festival <span class="gold">Sale!</span></h2>
+        <p>Up to <strong>40% OFF</strong> on all items at Kasaudhan Collection</p>
+        <p class="fp-sub">Limited time offer – Order now before stock runs out!</p>
+        <div class="fp-btns">
+          <a href="#products" id="fpShopBtn" class="btn btn-gold">🛍 Shop Now</a>
+          <a href="https://wa.me/919696824331?text=I%20want%20to%20order%20during%20festival%20sale!" target="_blank" id="fpWaBtn" class="btn btn-whatsapp">💬 WhatsApp Order</a>
+        </div>
+      </div>
+
+      <!-- Auto-close countdown bar -->
+      <div class="fp-timer-bar" aria-hidden="true">
+        <div class="fp-timer-fill" id="fpTimerFill"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <!-- Main JS -->
+  <script src="../js/main.js"></script>
+  <script src="../js/gallery.js"></script>
+</body>
+</html>

@@ -1,0 +1,181 @@
+/* =========================================
+   3D PREMIUM DECORATIVE TAGS
+   ========================================= */
+
+/* Base 3D Tag Style */
+.tag-3d {
+  position: absolute;
+  z-index: 10;
+  cursor: pointer;
+  filter: drop-shadow(3px 6px 8px rgba(0,0,0,0.3));
+  animation: floatTag 3s ease-in-out infinite;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.tag-3d:hover {
+  transform: scale(1.1) rotate(-10deg);
+  filter: drop-shadow(5px 10px 12px rgba(0,0,0,0.4));
+  animation-play-state: paused;
+}
+
+/* Floating Animation */
+@keyframes floatTag {
+  0%   { transform: translateY(0) rotate(-15deg); }
+  50%  { transform: translateY(-8px) rotate(-12deg); }
+  100% { transform: translateY(0) rotate(-15deg); }
+}
+
+/* 1. SALE Tag (Orange) */
+.tag-sale {
+  background: linear-gradient(135deg, #FF8C42, #FF6B35);
+  width: 60px;
+  height: 75px;
+  border-radius: 8px 8px 15px 15px;
+  color: #fff;
+  font-weight: 900;
+  font-size: 14px;
+  letter-spacing: 1px;
+  box-shadow: inset -2px -2px 6px rgba(0,0,0,0.2), inset 2px 2px 6px rgba(255,255,255,0.4);
+  padding-top: 15px;
+}
+.tag-sale::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 12px;
+  height: 12px;
+  background: #222; /* hole color matching dark theme or dark shadow */
+  border-radius: 50%;
+  box-shadow: inset 1px 1px 3px rgba(0,0,0,0.5), 0 1px 1px rgba(255,255,255,0.4);
+}
+
+/* 2. % OFF Tag (Blue) */
+.tag-percent {
+  background: linear-gradient(135deg, #42A5F5, #1E88E5);
+  width: 55px;
+  height: 65px;
+  color: #fff;
+  font-weight: 900;
+  font-size: 20px;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 50% 100%, 0% 75%);
+  box-shadow: inset -2px -2px 6px rgba(0,0,0,0.2), inset 2px 2px 6px rgba(255,255,255,0.4);
+  padding-top: 5px;
+}
+.tag-percent::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 14px;
+  height: 14px;
+  border: 3px solid #FFD700;
+  border-radius: 50%;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+/* 3. NEW Tag (Green Gradient) */
+.tag-new {
+  background: linear-gradient(135deg, #66BB6A, #43A047);
+  width: 55px;
+  height: 65px;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: 800;
+  font-size: 14px;
+  box-shadow: inset -2px -2px 6px rgba(0,0,0,0.2), inset 2px 2px 6px rgba(255,255,255,0.4);
+  padding-top: 10px;
+}
+.tag-new::before {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: inset 1px 1px 3px rgba(0,0,0,0.4);
+}
+
+/* 4. HOT Tag (Red) */
+.tag-hot {
+  background: linear-gradient(135deg, #EF5350, #E53935);
+  width: 55px;
+  height: 65px;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: 800;
+  font-size: 13px;
+  box-shadow: inset -2px -2px 6px rgba(0,0,0,0.2), inset 2px 2px 6px rgba(255,255,255,0.4);
+  padding-top: 8px;
+}
+.tag-hot::before {
+  content: '🔥';
+  font-size: 16px;
+  margin-bottom: 2px;
+}
+
+/* Staggered load animations */
+.tag-3d {
+  opacity: 0;
+  animation: dropFade 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards, floatTag 3s ease-in-out infinite 0.6s;
+}
+@keyframes dropFade {
+  0% { opacity: 0; transform: translateY(-30px) rotate(0deg); }
+  100% { opacity: 1; transform: translateY(0) rotate(-15deg); }
+}
+.stagger-1 { animation-delay: 0.2s, 0.8s; }
+.stagger-2 { animation-delay: 0.4s, 1.0s; }
+.stagger-3 { animation-delay: 0.6s, 1.2s; }
+.stagger-4 { animation-delay: 0.8s, 1.4s; }
+
+/* Decorative tags specific positioning classes */
+.decor-tag {
+  opacity: 0.9;
+}
+.decor-hero-1 { top: 20%; right: 10%; }
+.decor-hero-2 { bottom: 30%; right: 25%; }
+.decor-hero-3 { top: 40%; left: 15%; }
+
+.decor-offer-1 { top: -20px; right: 5%; }
+.decor-offer-2 { bottom: -20px; left: 10%; }
+
+/* Product/Category Card specific adjustments */
+/* Cards need position: relative for absolute tags to work properly */
+.category-card, .product-card {
+  position: relative;
+}
+
+.card-tag {
+  top: -15px;
+  left: -10px;
+  z-index: 20;
+}
+.card-tag.right {
+  left: auto;
+  right: -10px;
+}
+.card-tag.small {
+  transform: scale(0.85) rotate(-15deg);
+}
+
+/* Mobile Visibility Handling */
+@media (max-width: 768px) {
+  .decor-tag {
+    display: none !important;
+  }
+  .card-tag {
+    display: flex !important;
+  }
+}
