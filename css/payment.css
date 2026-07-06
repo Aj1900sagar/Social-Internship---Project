@@ -1,0 +1,360 @@
+/* Payment Modal overlay */
+.payment-overlay {
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Modal Card */
+.payment-card {
+  background: white;
+  border-radius: 20px;
+  padding: 24px;
+  max-width: 420px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  animation: modalFadeIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  display: flex;
+  flex-direction: column;
+}
+
+@keyframes modalFadeIn {
+  from {
+    transform: translateY(20px) scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+/* Close button */
+.payment-close-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: #f0f0f0;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: #666;
+  transition: background 0.2s, color 0.2s;
+}
+
+.payment-close-btn:hover {
+  background: #e0e0e0;
+  color: #1a1a1a;
+}
+
+/* Header */
+.payment-header h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 4px 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.payment-header p {
+  font-size: 13px;
+  color: #666;
+  margin: 0;
+}
+
+/* Total Amount Box */
+.payment-amount-box {
+  background: #f0fff4;
+  border: 1px solid #c6f6d5;
+  border-radius: 10px;
+  padding: 12px;
+  margin: 16px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.payment-amount-label {
+  font-size: 12px;
+  color: #666;
+}
+
+.payment-amount-value {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+/* QR Code Section */
+.payment-qr-sec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 16px 0;
+}
+
+.payment-qr-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #4a5568;
+  margin-bottom: 8px;
+}
+
+#upi-qr-container {
+  margin: auto;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 2px solid #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 240px;
+  height: 240px;
+  padding: 8px;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+#upi-qr {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  object-fit: contain;
+  display: block;
+}
+
+/* Apps Row */
+.upi-apps-section {
+  text-align: center;
+  margin: 12px 0 16px;
+}
+
+.upi-apps-label {
+  font-size: 12px;
+  color: #718096;
+  margin-bottom: 8px;
+}
+
+.upi-apps-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+.upi-app-link {
+  background: #f5f5f5;
+  border-radius: 20px;
+  padding: 6px 14px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  color: #1a1a1a;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.upi-app-link:hover {
+  background: #e2e8f0;
+  transform: translateY(-1px);
+}
+
+/* Copy Section */
+.upi-id-box {
+  background: #f7fafc;
+  border: 1px solid #edf2f7;
+  border-radius: 8px;
+  padding: 10px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 16px 0;
+}
+
+.upi-id-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;
+  overflow: hidden;
+  margin-right: 8px;
+}
+
+.upi-id-label {
+  font-size: 11px;
+  color: #718096;
+}
+
+.upi-id-val {
+  font-size: 13px;
+  font-weight: 600;
+  color: #2d3748;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.copy-btn {
+  background: transparent;
+  border: none;
+  color: #4a5568;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.copy-btn:hover {
+  background: #edf2f7;
+}
+
+/* Divider */
+.payment-divider {
+  height: 1px;
+  background: #edf2f7;
+  margin: 16px 0;
+}
+
+/* Footer Buttons */
+.payment-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 20px 0 12px;
+}
+
+.payment-btn {
+  border: none;
+  border-radius: 25px;
+  padding: 12px 24px;
+  font-weight: 600;
+  font-size: 14px;
+  width: 100%;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s, opacity 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.payment-btn:active {
+  transform: scale(0.98);
+}
+
+.payment-btn-paid {
+  background: #22c55e;
+  color: white;
+}
+
+.payment-btn-paid:hover {
+  background: #16a34a;
+}
+
+.payment-btn-cancel {
+  background: transparent;
+  border: 1px solid #e2e8f0;
+  color: #666;
+}
+
+.payment-btn-cancel:hover {
+  background: #f7fafc;
+  color: #1a1a1a;
+}
+
+/* Security Text */
+.payment-security-row {
+  font-size: 11px;
+  color: #a0aec0;
+  text-align: center;
+  margin-top: 12px;
+}
+
+.payment-loader {
+  width: 40px;
+  height: 40px;
+  border: 3px solid #f0f0f0;
+  border-top: 3px solid #22c55e;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 8px;
+}
+
+@keyframes spin {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+#status-success {
+  animation: popIn 0.5s 
+    cubic-bezier(0.175, 0.885, 
+    0.32, 1.275);
+}
+
+@keyframes popIn {
+  0%   { transform: scale(0.5); 
+         opacity: 0; }
+  100% { transform: scale(1); 
+         opacity: 1; }
+}
+
+/* Responsive Payment Modal */
+@media (max-width: 1023px) {
+  .payment-card {
+    width: 90%;
+  }
+  #upi-qr-container {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 767px) {
+  .payment-card {
+    width: 95%;
+    padding: 20px;
+    padding-bottom: calc(20px + env(safe-area-inset-bottom));
+  }
+  .payment-header h3 {
+    font-size: 18px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  #upi-qr-container {
+    width: 180px;
+    height: 180px;
+  }
+  .payment-amount-value {
+    font-size: 20px;
+  }
+  .upi-app-link {
+    flex: 1 1 calc(33.33% - 8px);
+    text-align: center;
+    padding: 8px 10px;
+  }
+  .upi-id-val {
+    font-size: 12px;
+  }
+}

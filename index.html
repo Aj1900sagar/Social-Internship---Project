@@ -1,0 +1,2019 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>Kasaudhan Collection – Men's & Kids Fashion Store in Gadakul, Shohratgarh</title>
+  <meta name="description" content="Kasaudhan Collection – Premium Men's & Kids Fashion Store in Gadakul, Shohratgarh, Siddharthnagar, Uttar Pradesh. Shop stylish jeans, shirts, T-shirts, kids wear, lowers, belts & slippers at affordable prices. Call 9696824331." />
+  <meta name="keywords" content="Kasaudhan Collection, Men's Wear Shop Shohratgarh, Kids Wear Shop Shohratgarh, Clothing Store Gadakul, Fashion Store Siddharthnagar, Jeans Shop Near Me, Shirt Shop Shohratgarh, Affordable Clothing Shop, Men's Fashion Uttar Pradesh, Kids Fashion Store" />
+  <meta name="author" content="Anoop Kasaudhan" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://kasaudhan-collection.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Kasaudhan Collection – Style That Defines You" />
+  <meta property="og:description" content="Premium Men's & Kids Fashion Store in Gadakul, Shohratgarh. Jeans, Shirts, T-Shirts, Kids Wear & more at affordable prices." />
+  <meta property="og:image" content="assets/images/store_hero.jpg" />
+  <meta property="og:url" content="https://kasaudhan-collection.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_IN" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Kasaudhan Collection – Style That Defines You" />
+  <meta name="twitter:description" content="Premium Men's & Kids Fashion Store in Gadakul, Shohratgarh." />
+  <meta name="twitter:image" content="assets/images/store_hero.jpg" />
+
+  <!-- Preconnect Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Leaflet Map -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ClothingStore",
+    "name": "Kasaudhan Collection",
+    "description": "Premium Men's & Kids Fashion Store offering stylish and affordable clothing including jeans, shirts, T-shirts, kids wear, lowers, belts and slippers.",
+    "url": "https://kasaudhan-collection.com",
+    "telephone": ["+919696824331", "+918840066738"],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Gadakul",
+      "addressLocality": "Shohratgarh",
+      "addressRegion": "Uttar Pradesh",
+      "addressCountry": "IN",
+      "postalCode": "272205"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 27.1267,
+      "longitude": 82.8732
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+        "opens": "09:00",
+        "closes": "21:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Sunday",
+        "opens": "10:00",
+        "closes": "20:00"
+      }
+    ],
+    "founder": {
+      "@type": "Person",
+      "name": "Anoop Kasaudhan"
+    },
+    "priceRange": "₹299 - ₹2999",
+    "servesCuisine": "Men's & Kids Fashion"
+  }
+  </script>
+
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <meta name="theme-color" content="#111111">
+  <link rel="stylesheet" href="css/tags.css">
+  <link rel="stylesheet" href="css/deals.css">
+</head>
+<body>
+
+  <!-- ===== LOADING SCREEN ===== -->
+  <div id="loader" class="loader">
+    <div class="loader-inner">
+      <div class="loader-logo">
+        <span class="loader-k">K</span>
+        <span class="loader-brand">KASAUDHAN</span>
+        <span class="loader-collection">COLLECTION</span>
+      </div>
+      <div class="loader-bar-wrap">
+        <div class="loader-bar" id="loaderBar"></div>
+      </div>
+      <p class="loader-tagline">Style That Defines You</p>
+    </div>
+  </div>
+
+  <!-- ===== OFFER BANNER ===== -->
+  <div id="offerBanner" class="offer-banner">
+    <p>🎉 <strong>Festival Sale LIVE!</strong> Up to 40% OFF on all items — Limited Time Offer &nbsp;|&nbsp; 📞 Call: 9696824331</p>
+    <button id="closeBanner" class="banner-close" aria-label="Close banner">✕</button>
+  </div>
+
+  <!-- ===== SCROLL PROGRESS BAR ===== -->
+  <div id="scrollProgress" class="scroll-progress"></div>
+
+  <!-- ===== STICKY HEADER ===== -->
+  <header id="header" class="header">
+    <div class="header-inner">
+      <!-- Left Section: Logo -->
+      <a href="#home" class="logo" aria-label="Kasaudhan Collection Home">
+        <span class="logo-k">K</span>
+        <div class="logo-text">
+          <span class="logo-name">KASAUDHAN</span>
+          <span class="logo-sub">COLLECTION</span>
+        </div>
+      </a>
+
+      <!-- Center Section: Desktop Navigation -->
+      <nav class="nav-desktop" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#categories" class="nav-link">Categories</a></li>
+          <li><a href="pages/products.html" class="nav-link">Products</a></li>
+          <li><a href="pages/gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#reviews" class="nav-link">Reviews</a></li>
+          <li><a href="pages/contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right Section: Actions -->
+      <div class="header-actions">
+        <button id="searchToggle" class="icon-btn" aria-label="Search">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </button>
+        <button id="cartToggle" class="icon-btn cart-btn" aria-label="Shopping Cart">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+          <span class="cart-badge" id="cartCount">0</span>
+        </button>
+        <a href="#products" class="btn btn-shop">Shop Now</a>
+        <button id="menuToggle" class="icon-btn menu-btn" aria-label="Open Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Search Bar -->
+    <div id="searchBar" class="search-bar" hidden>
+      <div class="search-container">
+        <input type="search" id="searchInput" placeholder="Search jeans, shirts, kids wear..." class="search-input" aria-label="Search products" autocomplete="off" />
+        <button id="searchClose" class="search-close" aria-label="Close search">✕</button>
+      </div>
+      <div id="searchResults" class="search-results"></div>
+    </div>
+
+    <!-- Mobile Nav Drawer -->
+    <div id="mobileOverlay" class="mobile-overlay" aria-hidden="true" hidden></div>
+    <nav id="mobileNav" class="nav-mobile" aria-label="Mobile Navigation" hidden>
+      <div class="mobile-nav-header">
+        <a href="#home" class="logo mobile-logo" aria-label="Home">
+          <span class="logo-k">K</span>
+          <div class="logo-text">
+            <span class="logo-name">KASAUDHAN</span>
+            <span class="logo-sub">COLLECTION</span>
+          </div>
+        </a>
+        <button id="mobileClose" class="icon-btn mobile-close" aria-label="Close Menu">✕</button>
+      </div>
+      
+      <div class="mobile-nav-actions">
+        <button class="icon-btn mobile-search-btn" aria-label="Search">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          Search
+        </button>
+        <button class="icon-btn cart-btn mobile-cart-btn" aria-label="Cart">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+          Cart <span class="cart-badge" id="mobileCartCount">0</span>
+        </button>
+      </div>
+
+      <ul class="mobile-nav-list">
+        <li><a href="#home" class="mobile-nav-link active">Home</a></li>
+        <li><a href="#categories" class="mobile-nav-link">Categories</a></li>
+        <li><a href="pages/products.html" class="mobile-nav-link">Products</a></li>
+        <li><a href="pages/gallery.html" class="mobile-nav-link">Gallery</a></li>
+        <li><a href="#about" class="mobile-nav-link">About</a></li>
+        <li><a href="#reviews" class="mobile-nav-link">Reviews</a></li>
+        <li><a href="pages/contact.html" class="mobile-nav-link">Contact</a></li>
+      </ul>
+      
+      <div class="mobile-nav-ctas">
+        <a href="#products" class="btn btn-shop w-full mobile-shop-btn">Shop Now</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section id="home" class="hero">
+    <div class="hero-bg">
+      <img src="assets/images/store_hero.jpg" alt="Kasaudhan Collection Store" class="hero-img" loading="eager" />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="container hero-content">
+      <div class="hero-badge animate-fade-up">✨ Premium Fashion Store</div>
+      <h1 class="hero-title animate-fade-up delay-1">
+        Kasaudhan<br /><span class="gold">Collection</span>
+      </h1>
+      <p class="hero-tagline animate-fade-up delay-2">Style That Defines You</p>
+      <p class="hero-sub animate-fade-up delay-3">
+        Premium Men's & Kids Fashion Store in Gadakul, Shohratgarh<br />
+        <span>Discover stylish fashion for every occasion with affordable prices, quality fabrics,</span><br />
+        <span>and the latest collections for men and kids.</span>
+      </p>
+      <div class="hero-ctas animate-fade-up delay-4">
+        <a href="#products" class="btn btn-gold">🛍 Shop Collection</a>
+        <a href="tel:9696824331" class="btn btn-outline-white">📞 Call Now</a>
+        <a href="https://wa.me/919696824331?text=Hello%20Kasaudhan%20Collection%2C%20I%20want%20to%20place%20an%20order!" target="_blank" class="btn btn-whatsapp">💬 WhatsApp</a>
+        <a href="https://www.google.com/maps/search/Gadakul+Shohratgarh+Siddharthnagar+Uttar+Pradesh" target="_blank" class="btn btn-outline-white">📍 Visit Store</a>
+      </div>
+      <div class="hero-stats animate-fade-up delay-5">
+        <div class="stat"><span class="stat-num" data-target="500">0</span>+<p>Products</p></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num" data-target="1000">0</span>+<p>Customers</p></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num" data-target="5">0</span>+<p>Years</p></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num" data-target="8">0</span>+<p>Categories</p></div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-indicator">
+        <span class="scroll-dot"></span>
+      </div>
+      <span>Scroll Down</span>
+    </div>
+  </section>
+
+  <!-- ===== FEATURED CATEGORIES ===== -->
+  <section id="categories" class="section categories-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Browse By</span>
+        <h2 class="section-title">Our <span class="gold">Collections</span></h2>
+        <p class="section-desc">Explore our wide range of premium fashion categories for men and kids</p>
+      </div>
+      <div class="categories-grid">
+        <div class="cat-card reveal" data-category="jeans">
+          <div class="cat-icon-wrap">
+            <img src="assets/images/jeans.jpg" alt="Jeans Collection" class="cat-img" loading="lazy" />
+            <div class="cat-overlay"></div>
+          </div>
+          <div class="cat-info">
+            <span class="cat-emoji">👖</span>
+            <h3>Jeans</h3>
+            <p>Slim, Regular & Straight Fit</p>
+            <span class="cat-link">Shop Now →</span>
+          </div>
+        </div>
+        <div class="cat-card reveal" data-category="shirts">
+          <div class="cat-icon-wrap">
+            <img src="assets/images/shirts.jpg" alt="Shirts Collection" class="cat-img" loading="lazy" />
+            <div class="cat-overlay"></div>
+          </div>
+          <div class="cat-info">
+            <span class="cat-emoji">👕</span>
+            <h3>Shirts</h3>
+            <p>Formal, Casual & Checks</p>
+            <span class="cat-link">Shop Now →</span>
+          </div>
+        </div>
+        <div class="cat-card reveal" data-category="tshirts">
+          <div class="cat-icon-wrap">
+            <img src="assets/images/tshirts.jpg" alt="T-Shirts Collection" class="cat-img" loading="lazy" />
+            <div class="cat-overlay"></div>
+          </div>
+          <div class="cat-info">
+            <span class="cat-emoji">👕</span>
+            <h3>T-Shirts</h3>
+            <p>Graphic, Solid & Printed</p>
+            <span class="cat-link">Shop Now →</span>
+          </div>
+        </div>
+        <div class="cat-card reveal" data-category="lowers">
+          <div class="cat-icon-wrap">
+            <img src="assets/images/lowers.jpg" alt="Lowers Collection" class="cat-img" loading="lazy" />
+            <div class="cat-overlay"></div>
+          </div>
+          <div class="cat-info">
+            <span class="cat-emoji">🩳</span>
+            <h3>Lowers</h3>
+            <p>Track Pants & Joggers</p>
+            <span class="cat-link">Shop Now →</span>
+          </div>
+        </div>
+        <div class="cat-card reveal" data-category="kids">
+          <div class="cat-icon-wrap">
+            <img src="assets/images/kids.jpg" alt="Kids Wear Collection" class="cat-img" loading="lazy" />
+            <div class="cat-overlay"></div>
+          </div>
+          <div class="cat-info">
+            <span class="cat-emoji">👦</span>
+            <h3>Kids Wear</h3>
+            <p>Shirts, Pants & Sets</p>
+            <span class="cat-link">Shop Now →</span>
+          </div>
+        </div>
+        <div class="cat-card reveal" data-category="accessories">
+          <div class="cat-icon-wrap">
+            <img src="assets/images/accessories.jpg" alt="Belts & Slippers" class="cat-img" loading="lazy" />
+            <div class="cat-overlay"></div>
+          </div>
+          <div class="cat-info">
+            <span class="cat-emoji">👔</span>
+            <h3>Belts & Slippers</h3>
+            <p>Leather & Fashion</p>
+            <span class="cat-link">Shop Now →</span>
+          </div>
+        </div>
+        <div class="cat-card reveal" data-category="winter">
+          <div class="cat-icon-wrap">
+            <img src="assets/images/winter.jpg" alt="Winter Wear Collection" class="cat-img" loading="lazy" />
+            <div class="cat-overlay"></div>
+          </div>
+          <div class="cat-info">
+            <span class="cat-emoji">🧥</span>
+            <h3>Winter Wear</h3>
+            <p>Jackets, Hoodies & Sweaters</p>
+            <span class="cat-link">Shop Now →</span>
+          </div>
+        </div>
+        <div class="cat-card cat-card-all reveal" tabindex="0" onclick="navigateToCategory('all', event)" onkeydown="if(event.key === 'Enter' || event.key === ' ') { navigateToCategory('all', event); }">
+          <div class="cat-all-inner">
+            <span class="cat-all-icon">✨</span>
+            <h3>All Collections</h3>
+            <p>View Everything</p>
+            <span class="cat-link">Browse All →</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- ===== SUGGESTED FOR YOU ===== -->
+  <section class="suggested-section">
+    <div class="container">
+      <div class="suggested-header">
+        <h2 class="suggested-title">Suggested For You</h2>
+        <button class="suggested-arrow" aria-label="Scroll Right">→</button>
+      </div>
+      <div class="suggested-row">
+        <!-- Card 1 -->
+        <a href="pages/products.html?category=jeans" style="text-decoration: none; color: inherit; display: block;">
+          <div class="suggest-card">
+            <div class="suggest-img">
+              <img src="images/gallery/jeans/jeans01.webp" alt="Premium Slim Fit Jeans" loading="lazy">
+            </div>
+            <div class="suggest-info">
+              <div class="suggest-rating">4 ★</div>
+              <h3 class="suggest-name">Premium Slim Fit Jeans</h3>
+              <div class="suggest-prices">
+                <span class="suggest-original">₹999</span>
+                <span class="suggest-current">₹599</span>
+              </div>
+              <div class="suggest-upi">₹549 with UPI offer + more</div>
+            </div>
+          </div>
+        </a>
+        <!-- Card 2 -->
+        <a href="pages/products.html?category=shirts" style="text-decoration: none; color: inherit; display: block;">
+          <div class="suggest-card">
+            <div class="suggest-img">
+              <img src="images/gallery/shop/shop02.webp" alt="Classic Cotton Shirt" loading="lazy">
+            </div>
+            <div class="suggest-info">
+              <div class="suggest-rating">4.2 ★</div>
+              <h3 class="suggest-name">Classic Cotton Shirt</h3>
+              <div class="suggest-prices">
+                <span class="suggest-original">₹699</span>
+                <span class="suggest-current">₹449</span>
+              </div>
+              <div class="suggest-upi">₹399 with UPI offer + more</div>
+            </div>
+          </div>
+        </a>
+        <!-- Card 3 -->
+        <a href="pages/products.html?category=tshirts" style="text-decoration: none; color: inherit; display: block;">
+          <div class="suggest-card">
+            <div class="suggest-img">
+              <img src="images/gallery/shop/shop03.webp" alt="Graphic Print T-Shirt" loading="lazy">
+            </div>
+            <div class="suggest-info">
+              <div class="suggest-rating">4 ★</div>
+              <h3 class="suggest-name">Graphic Print T-Shirt</h3>
+              <div class="suggest-prices">
+                <span class="suggest-original">₹499</span>
+                <span class="suggest-current">₹299</span>
+              </div>
+              <div class="suggest-upi">₹269 with UPI offer + more</div>
+            </div>
+          </div>
+        </a>
+        <!-- Card 4 -->
+        <a href="pages/products.html?category=kids-wear" style="text-decoration: none; color: inherit; display: block;">
+          <div class="suggest-card">
+            <div class="suggest-img">
+              <img src="images/gallery/kids/kids01.webp" alt="Kids Casual Wear Set" loading="lazy">
+            </div>
+            <div class="suggest-info">
+              <div class="suggest-rating">4.5 ★</div>
+              <h3 class="suggest-name">Kids Casual Wear Set</h3>
+              <div class="suggest-prices">
+                <span class="suggest-original">₹599</span>
+                <span class="suggest-current">₹349</span>
+              </div>
+              <div class="suggest-upi">₹312 with UPI offer + more</div>
+            </div>
+          </div>
+        </a>
+        <!-- Card 5 -->
+        <a href="pages/products.html?category=lowers" style="text-decoration: none; color: inherit; display: block;">
+          <div class="suggest-card">
+            <div class="suggest-img">
+              <img src="images/gallery/shop/shop05.webp" alt="Comfortable Track Lower" loading="lazy">
+            </div>
+            <div class="suggest-info">
+              <div class="suggest-rating">4 ★</div>
+              <h3 class="suggest-name">Comfortable Track Lower</h3>
+              <div class="suggest-prices">
+                <span class="suggest-original">₹599</span>
+                <span class="suggest-current">₹379</span>
+              </div>
+              <div class="suggest-upi">₹340 with UPI offer + more</div>
+            </div>
+          </div>
+        </a>
+        <!-- Card 6 -->
+        <a href="pages/products.html?category=winter" style="text-decoration: none; color: inherit; display: block;">
+          <div class="suggest-card">
+            <div class="suggest-img">
+              <img src="images/gallery/shop/shop06.webp" alt="Winter Hooded Jacket" loading="lazy">
+            </div>
+            <div class="suggest-info">
+              <div class="suggest-rating">4.3 ★</div>
+              <h3 class="suggest-name">Winter Hooded Jacket</h3>
+              <div class="suggest-prices">
+                <span class="suggest-original">₹1299</span>
+                <span class="suggest-current">₹799</span>
+              </div>
+              <div class="suggest-upi">₹717 with UPI offer + more</div>
+            </div>
+          </div>
+        </a>
+        <!-- Card 7 -->
+        <a href="pages/products.html?category=accessories" style="text-decoration: none; color: inherit; display: block;">
+          <div class="suggest-card">
+            <div class="suggest-img">
+              <img src="images/gallery/shop/shop07.webp" alt="Stylish Belt & Wallet" loading="lazy">
+            </div>
+            <div class="suggest-info">
+              <div class="suggest-rating">4 ★</div>
+              <h3 class="suggest-name">Stylish Belt & Wallet</h3>
+              <div class="suggest-prices">
+                <span class="suggest-original">₹499</span>
+                <span class="suggest-current">₹299</span>
+              </div>
+              <div class="suggest-upi">₹250 with UPI offer + more</div>
+            </div>
+          </div>
+        </a>
+        <!-- Card 8 -->
+        <a href="pages/products.html?category=ethnic-wear" style="text-decoration: none; color: inherit; display: block;">
+          <div class="suggest-card">
+            <div class="suggest-img">
+              <img src="images/gallery/shop/shop08.webp" alt="Ethnic Kurta Set" loading="lazy">
+            </div>
+            <div class="suggest-info">
+              <div class="suggest-rating">4.1 ★</div>
+              <h3 class="suggest-name">Ethnic Kurta Set</h3>
+              <div class="suggest-prices">
+                <span class="suggest-original">₹899</span>
+                <span class="suggest-current">₹549</span>
+              </div>
+              <div class="suggest-upi">₹499 with UPI offer + more</div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SPECIAL OFFERS BANNER ===== -->
+  <section class="offer-section" style="position:relative;">
+    <div class="container">
+      <div class="tag-3d tag-new decor-tag decor-offer-1 stagger-1">NEW</div>
+      <div class="tag-3d tag-sale decor-tag decor-offer-2 stagger-4">SALE</div>
+
+      <div class="offer-cards">
+        <div class="offer-card reveal">
+          <span class="offer-badge">SALE</span>
+          <h3>🎊 Festival Collection</h3>
+          <p>Up to <strong>40% OFF</strong> on selected items</p>
+          <a href="#products" onclick="navigateToCategory('all', event)" class="btn btn-gold btn-sm">Order Now</a>
+        </div>
+        <div class="offer-card offer-card-dark reveal">
+          <span class="offer-badge">NEW</span>
+          <h3>👦 Kids Summer Sale</h3>
+          <p>Fresh arrivals for kids starting ₹299</p>
+          <a href="#products" onclick="navigateToCategory('kids', event)" class="btn btn-gold btn-sm">Shop Kids</a>
+        </div>
+        <div class="offer-card reveal">
+          <span class="offer-badge">HOT</span>
+          <h3>👖 Premium Denim Fest</h3>
+          <p>Top brands jeans from ₹799 only</p>
+          <a href="#products" onclick="navigateToCategory('jeans', event)" class="btn btn-gold btn-sm">Buy Jeans</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FEATURED PRODUCTS ===== -->
+  <section id="products" class="section products-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Bestsellers</span>
+        <h2 class="section-title">Featured <span class="gold">Products</span></h2>
+        <p class="section-desc">Hand-picked quality items at unbeatable prices</p>
+      </div>
+
+      <!-- Search Bar -->
+      <div class="featured-search-container">
+        <div class="featured-search-wrapper">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="featuredSearchInput" placeholder="Search products..." class="featured-search-input" />
+        </div>
+      </div>
+
+      <!-- Filter Bar -->
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="jeans">👖 Jeans</button>
+        <button class="filter-btn" data-filter="shirts">👕 Shirts</button>
+        <button class="filter-btn" data-filter="tshirts">👕 T-Shirts</button>
+        <button class="filter-btn" data-filter="lowers">🩳 Lowers</button>
+        <button class="filter-btn" data-filter="kids">👦 Kids</button>
+        <button class="filter-btn" data-filter="accessories">🎽 Accessories</button>
+        <button class="filter-btn" data-filter="winter">🧥 Winter</button>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="products-grid" id="productsGrid">
+
+        <div class="product-card reveal" data-cat="jeans">
+          <div class="product-img-wrap">
+            <img src="assets/images/jeans.jpg" alt="Premium Denim Jeans" class="product-img" loading="lazy" />
+            <div class="product-badges">
+              <span class="badge badge-sale">BESTSELLER</span>
+            </div>
+            <div class="product-actions">
+              <button class="action-btn wishlist-btn" title="Wishlist" onclick="toggleWishlist(this)" data-name="Premium Denim Jeans">♡</button>
+              <button class="action-btn quickview-btn" title="Quick View" onclick="openQuickView('jeans')">👁</button>
+              <button class="action-btn share-btn" title="Share" onclick="shareProduct('Premium Denim Jeans')">↗</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-cat">Jeans</span>
+            <h3 class="product-name">Premium Denim Jeans</h3>
+            <p class="product-desc">Slim fit cotton denim – durable, stylish, and comfortable for everyday wear.</p>
+            <div class="product-sizes">
+              <span class="size-label">Sizes:</span>
+              <span class="size-tag">30</span><span class="size-tag">32</span><span class="size-tag">34</span><span class="size-tag">36</span><span class="size-tag">38</span>
+            </div>
+            <div class="product-price-row">
+              <span class="product-price">₹799</span>
+              <span class="product-price-old">₹1,199</span>
+              <span class="discount-tag">-33%</span>
+            </div>
+            <div class="product-btns">
+              <button class="btn btn-primary btn-sm" onclick="addToCart('Premium Denim Jeans','₹799','jeans.jpg')">🛒 Add to Cart</button>
+              <a href="https://wa.me/919696824331?text=Hello!%20I%20want%20to%20order%20Premium%20Denim%20Jeans%20from%20Kasaudhan%20Collection." target="_blank" class="btn btn-whatsapp btn-sm">💬 WhatsApp</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card reveal" data-cat="shirts">
+          <div class="product-img-wrap">
+            <img src="assets/images/shirts.jpg" alt="Casual Cotton Shirt" class="product-img" loading="lazy" />
+            <div class="product-badges">
+              <span class="badge badge-new">NEW</span>
+            </div>
+            <div class="product-actions">
+              <button class="action-btn wishlist-btn" title="Wishlist" onclick="toggleWishlist(this)" data-name="Casual Cotton Shirt">♡</button>
+              <button class="action-btn quickview-btn" title="Quick View" onclick="openQuickView('shirts')">👁</button>
+              <button class="action-btn share-btn" title="Share" onclick="shareProduct('Casual Cotton Shirt')">↗</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-cat">Shirts</span>
+            <h3 class="product-name">Casual Cotton Shirt</h3>
+            <p class="product-desc">Premium cotton casual shirts – perfect for daily wear, office, and outings.</p>
+            <div class="product-sizes">
+              <span class="size-label">Sizes:</span>
+              <span class="size-tag">S</span><span class="size-tag">M</span><span class="size-tag">L</span><span class="size-tag">XL</span><span class="size-tag">XXL</span>
+            </div>
+            <div class="product-price-row">
+              <span class="product-price">₹549</span>
+              <span class="product-price-old">₹899</span>
+              <span class="discount-tag">-39%</span>
+            </div>
+            <div class="product-btns">
+              <button class="btn btn-primary btn-sm" onclick="addToCart('Casual Cotton Shirt','₹549','shirts.jpg')">🛒 Add to Cart</button>
+              <a href="https://wa.me/919696824331?text=Hello!%20I%20want%20to%20order%20Casual%20Cotton%20Shirt%20from%20Kasaudhan%20Collection." target="_blank" class="btn btn-whatsapp btn-sm">💬 WhatsApp</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card reveal" data-cat="tshirts">
+          <div class="product-img-wrap">
+            <img src="assets/images/tshirts.jpg" alt="Graphic Print T-Shirt" class="product-img" loading="lazy" />
+            <div class="product-badges">
+              <span class="badge badge-hot">HOT</span>
+            </div>
+            <div class="product-actions">
+              <button class="action-btn wishlist-btn" title="Wishlist" onclick="toggleWishlist(this)" data-name="Graphic Print T-Shirt">♡</button>
+              <button class="action-btn quickview-btn" title="Quick View" onclick="openQuickView('tshirts')">👁</button>
+              <button class="action-btn share-btn" title="Share" onclick="shareProduct('Graphic Print T-Shirt')">↗</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-cat">T-Shirts</span>
+            <h3 class="product-name">Graphic Print T-Shirt</h3>
+            <p class="product-desc">Trendy graphic and solid color T-shirts for casual everyday style.</p>
+            <div class="product-sizes">
+              <span class="size-label">Sizes:</span>
+              <span class="size-tag">S</span><span class="size-tag">M</span><span class="size-tag">L</span><span class="size-tag">XL</span><span class="size-tag">XXL</span>
+            </div>
+            <div class="product-price-row">
+              <span class="product-price">₹349</span>
+              <span class="product-price-old">₹599</span>
+              <span class="discount-tag">-42%</span>
+            </div>
+            <div class="product-btns">
+              <button class="btn btn-primary btn-sm" onclick="addToCart('Graphic Print T-Shirt','₹349','tshirts.jpg')">🛒 Add to Cart</button>
+              <a href="https://wa.me/919696824331?text=Hello!%20I%20want%20to%20order%20Graphic%20Print%20T-Shirt%20from%20Kasaudhan%20Collection." target="_blank" class="btn btn-whatsapp btn-sm">💬 WhatsApp</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card reveal" data-cat="kids">
+          <div class="product-img-wrap">
+            <img src="assets/images/kids.jpg" alt="Kids Fashion Set" class="product-img" loading="lazy" />
+            <div class="product-badges">
+              <span class="badge badge-new">NEW</span>
+            </div>
+            <div class="product-actions">
+              <button class="action-btn wishlist-btn" title="Wishlist" onclick="toggleWishlist(this)" data-name="Kids Fashion Set">♡</button>
+              <button class="action-btn quickview-btn" title="Quick View" onclick="openQuickView('kids')">👁</button>
+              <button class="action-btn share-btn" title="Share" onclick="shareProduct('Kids Fashion Set')">↗</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-cat">Kids Wear</span>
+            <h3 class="product-name">Kids Fashion Set</h3>
+            <p class="product-desc">Colorful & comfortable clothing sets for kids – shirts, pants, and T-shirts.</p>
+            <div class="product-sizes">
+              <span class="size-label">Sizes:</span>
+              <span class="size-tag">2Y</span><span class="size-tag">4Y</span><span class="size-tag">6Y</span><span class="size-tag">8Y</span><span class="size-tag">10Y</span>
+            </div>
+            <div class="product-price-row">
+              <span class="product-price">₹299</span>
+              <span class="product-price-old">₹499</span>
+              <span class="discount-tag">-40%</span>
+            </div>
+            <div class="product-btns">
+              <button class="btn btn-primary btn-sm" onclick="addToCart('Kids Fashion Set','₹299','kids.jpg')">🛒 Add to Cart</button>
+              <a href="https://wa.me/919696824331?text=Hello!%20I%20want%20to%20order%20Kids%20Fashion%20Set%20from%20Kasaudhan%20Collection." target="_blank" class="btn btn-whatsapp btn-sm">💬 WhatsApp</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card reveal" data-cat="lowers">
+          <div class="product-img-wrap">
+            <img src="assets/images/lowers.jpg" alt="Casual Track Lower" class="product-img" loading="lazy" />
+            <div class="product-badges">
+              <span class="badge badge-sale">POPULAR</span>
+            </div>
+            <div class="product-actions">
+              <button class="action-btn wishlist-btn" title="Wishlist" onclick="toggleWishlist(this)" data-name="Casual Track Lower">♡</button>
+              <button class="action-btn quickview-btn" title="Quick View" onclick="openQuickView('lowers')">👁</button>
+              <button class="action-btn share-btn" title="Share" onclick="shareProduct('Casual Track Lower')">↗</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-cat">Lowers</span>
+            <h3 class="product-name">Casual Track Lower</h3>
+            <p class="product-desc">Comfortable cotton track pants and joggers for daily wear and sports.</p>
+            <div class="product-sizes">
+              <span class="size-label">Sizes:</span>
+              <span class="size-tag">S</span><span class="size-tag">M</span><span class="size-tag">L</span><span class="size-tag">XL</span><span class="size-tag">XXL</span>
+            </div>
+            <div class="product-price-row">
+              <span class="product-price">₹449</span>
+              <span class="product-price-old">₹699</span>
+              <span class="discount-tag">-36%</span>
+            </div>
+            <div class="product-btns">
+              <button class="btn btn-primary btn-sm" onclick="addToCart('Casual Track Lower','₹449','lowers.jpg')">🛒 Add to Cart</button>
+              <a href="https://wa.me/919696824331?text=Hello!%20I%20want%20to%20order%20Casual%20Track%20Lower%20from%20Kasaudhan%20Collection." target="_blank" class="btn btn-whatsapp btn-sm">💬 WhatsApp</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card reveal" data-cat="accessories">
+          <div class="product-img-wrap">
+            <img src="assets/images/accessories.jpg" alt="Premium Leather Belt" class="product-img" loading="lazy" />
+            <div class="product-badges">
+              <span class="badge badge-hot">HOT</span>
+            </div>
+            <div class="product-actions">
+              <button class="action-btn wishlist-btn" title="Wishlist" onclick="toggleWishlist(this)" data-name="Premium Leather Belt">♡</button>
+              <button class="action-btn quickview-btn" title="Quick View" onclick="openQuickView('accessories')">👁</button>
+              <button class="action-btn share-btn" title="Share" onclick="shareProduct('Premium Leather Belt')">↗</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-cat">Accessories</span>
+            <h3 class="product-name">Premium Leather Belt</h3>
+            <p class="product-desc">Genuine leather belts and fashionable slippers for everyday style.</p>
+            <div class="product-sizes">
+              <span class="size-label">Sizes:</span>
+              <span class="size-tag">28</span><span class="size-tag">30</span><span class="size-tag">32</span><span class="size-tag">34</span><span class="size-tag">36</span>
+            </div>
+            <div class="product-price-row">
+              <span class="product-price">₹249</span>
+              <span class="product-price-old">₹399</span>
+              <span class="discount-tag">-38%</span>
+            </div>
+            <div class="product-btns">
+              <button class="btn btn-primary btn-sm" onclick="addToCart('Premium Leather Belt','₹249','accessories.jpg')">🛒 Add to Cart</button>
+              <a href="https://wa.me/919696824331?text=Hello!%20I%20want%20to%20order%20Premium%20Leather%20Belt%20from%20Kasaudhan%20Collection." target="_blank" class="btn btn-whatsapp btn-sm">💬 WhatsApp</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card reveal" data-cat="winter">
+          <div class="product-img-wrap">
+            <img src="assets/images/winter.jpg" alt="Winter Jacket" class="product-img" loading="lazy" />
+            <div class="product-badges">
+              <span class="badge badge-new">SEASON</span>
+            </div>
+            <div class="product-actions">
+              <button class="action-btn wishlist-btn" title="Wishlist" onclick="toggleWishlist(this)" data-name="Winter Jacket">♡</button>
+              <button class="action-btn quickview-btn" title="Quick View" onclick="openQuickView('winter')">👁</button>
+              <button class="action-btn share-btn" title="Share" onclick="shareProduct('Winter Jacket')">↗</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-cat">Winter Wear</span>
+            <h3 class="product-name">Premium Winter Jacket</h3>
+            <p class="product-desc">Warm and stylish jackets, hoodies, and sweaters for the winter season.</p>
+            <div class="product-sizes">
+              <span class="size-label">Sizes:</span>
+              <span class="size-tag">S</span><span class="size-tag">M</span><span class="size-tag">L</span><span class="size-tag">XL</span><span class="size-tag">XXL</span>
+            </div>
+            <div class="product-price-row">
+              <span class="product-price">₹999</span>
+              <span class="product-price-old">₹1,599</span>
+              <span class="discount-tag">-37%</span>
+            </div>
+            <div class="product-btns">
+              <button class="btn btn-primary btn-sm" onclick="addToCart('Premium Winter Jacket','₹999','winter.jpg')">🛒 Add to Cart</button>
+              <a href="https://wa.me/919696824331?text=Hello!%20I%20want%20to%20order%20Premium%20Winter%20Jacket%20from%20Kasaudhan%20Collection." target="_blank" class="btn btn-whatsapp btn-sm">💬 WhatsApp</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card reveal" data-cat="shirts">
+          <div class="product-img-wrap">
+            <img src="assets/images/store_interior.jpg" alt="Formal Shirt" class="product-img" loading="lazy" />
+            <div class="product-badges">
+              <span class="badge badge-sale">TRENDING</span>
+            </div>
+            <div class="product-actions">
+              <button class="action-btn wishlist-btn" title="Wishlist" onclick="toggleWishlist(this)" data-name="Premium Formal Shirt">♡</button>
+              <button class="action-btn quickview-btn" title="Quick View" onclick="openQuickView('shirts')">👁</button>
+              <button class="action-btn share-btn" title="Share" onclick="shareProduct('Premium Formal Shirt')">↗</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-cat">Shirts</span>
+            <h3 class="product-name">Premium Formal Shirt</h3>
+            <p class="product-desc">Classic formal shirts for office and special occasions – crisp and elegant.</p>
+            <div class="product-sizes">
+              <span class="size-label">Sizes:</span>
+              <span class="size-tag">S</span><span class="size-tag">M</span><span class="size-tag">L</span><span class="size-tag">XL</span>
+            </div>
+            <div class="product-price-row">
+              <span class="product-price">₹649</span>
+              <span class="product-price-old">₹999</span>
+              <span class="discount-tag">-35%</span>
+            </div>
+            <div class="product-btns">
+              <button class="btn btn-primary btn-sm" onclick="addToCart('Premium Formal Shirt','₹649','shirts.jpg')">🛒 Add to Cart</button>
+              <a href="https://wa.me/919696824331?text=Hello!%20I%20want%20to%20order%20Premium%20Formal%20Shirt%20from%20Kasaudhan%20Collection." target="_blank" class="btn btn-whatsapp btn-sm">💬 WhatsApp</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- No Products Found Message -->
+        <div id="noProductsMsg" class="no-products-msg" style="display: none;">No products found.</div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- New Arrivals Section -->
+  <section class="new-arrivals-section">
+    <div class="na-header-wrapper" style="position: relative; max-width: 800px; margin: 0 auto; z-index: 10;">
+      <!-- Premium 3D Promo Tags -->
+      <div class="promo-tag promo-tag-new">NEW ARRIVAL</div>
+      <div class="promo-tag promo-tag-best">BEST SELLER</div>
+      <div class="promo-tag promo-tag-50">50%<br>OFF</div>
+      <div class="promo-tag promo-tag-sale">SALE</div>
+
+      <div class="just-in-badge">JUST IN</div>
+      <h2 class="arrivals-heading">
+        <span style="color:#1a1a1a;">New </span>
+        <span style="color:#C9A84C;">Arrivals</span>
+      </h2>
+      <p class="arrivals-subtext">
+        Fresh styles added every week – 
+        be the first to grab the latest fashion
+      </p>
+    </div>
+
+    <div class="new-arrivals-row">
+
+      <a href="pages/products.html?category=shirts"
+         class="arrival-card">
+        <div class="arrival-img" style="background: #E3F2FD;">
+          <img src="images/gallery/shirts/shirts01.webp"
+               alt="Casual Shirts" loading="lazy"
+               onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\'width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:60px;\'>👔</div>'">
+        </div>
+        <div class="arrival-info">
+          <p class="arrival-name">Casual Shirts</p>
+          <p class="arrival-price">Starting ₹549</p>
+          <button class="order-btn">Order Now</button>
+        </div>
+      </a>
+
+      <a href="pages/products.html?category=kids-wear"
+         class="arrival-card">
+        <div class="arrival-img" style="background: #FFF3E0;">
+          <img src="images/gallery/kids/kids01.webp"
+               alt="Kids Wear" loading="lazy"
+               onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\'width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:60px;\'>👶</div>'">
+        </div>
+        <div class="arrival-info">
+          <p class="arrival-name">Printed Kids Wear</p>
+          <p class="arrival-price">Starting ₹299</p>
+          <button class="order-btn">Order Now</button>
+        </div>
+      </a>
+
+      <a href="pages/products.html?category=lowers"
+         class="arrival-card">
+        <div class="arrival-img" style="background: #F3E5F5;">
+          <img src="images/gallery/lowers/lowers01.webp"
+               alt="Lowers" loading="lazy"
+               onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\'width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:60px;\'>👖</div>'">
+        </div>
+        <div class="arrival-info">
+          <p class="arrival-name">Stylish Lowers</p>
+          <p class="arrival-price">Starting ₹449</p>
+          <button class="order-btn">Order Now</button>
+        </div>
+      </a>
+
+      <a href="pages/products.html?category=jeans"
+         class="arrival-card">
+        <div class="arrival-img" style="background: #E8EAF6;">
+          <img src="images/gallery/jeans/jeans01.webp"
+               alt="Jeans" loading="lazy"
+               onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\'width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:60px;\'>👖</div>'">
+        </div>
+        <div class="arrival-info">
+          <p class="arrival-name">Premium Denim</p>
+          <p class="arrival-price">Starting ₹799</p>
+          <button class="order-btn">Order Now</button>
+        </div>
+      </a>
+
+      <a href="pages/products.html?category=accessories"
+         class="arrival-card">
+        <div class="arrival-img" style="background: #FFF8E1;">
+          <img src="images/gallery/accessories/accessories01.webp"
+               alt="Accessories" loading="lazy"
+               onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\'width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:60px;\'>👜</div>'">
+        </div>
+        <div class="arrival-info">
+          <p class="arrival-name">Fashion Accessories</p>
+          <p class="arrival-price">Starting ₹249</p>
+          <button class="order-btn">Order Now</button>
+        </div>
+      </a>
+
+      <a href="pages/products.html?category=tshirts"
+         class="arrival-card">
+        <div class="arrival-img" style="background: #E8F5E9;">
+          <img src="images/gallery/tshirts/tshirts01.webp"
+               alt="T-Shirts" loading="lazy"
+               onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\'width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:60px;\'>👕</div>'">
+        </div>
+        <div class="arrival-info">
+          <p class="arrival-name">Trendy T-Shirts</p>
+          <p class="arrival-price">Starting ₹349</p>
+          <button class="order-btn">Order Now</button>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- Latest Trends Banner Section -->
+  <div class="container">
+    <section class="trends-banner-section">
+      <img src="images/gallery/trends/trends.png" alt="Latest Trends In Demand" class="trends-banner-img" loading="lazy">
+    </section>
+  </div>
+
+
+  <!-- ===== WHY CHOOSE US ===== -->
+  <section class="section why-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Our Promise</span>
+        <h2 class="section-title">Why Choose <span class="gold">Us?</span></h2>
+        <p class="section-desc">Trusted by hundreds of families in Gadakul and Shohratgarh</p>
+      </div>
+      <div class="why-grid">
+        <div class="why-card reveal">
+          <div class="why-icon">💰</div>
+          <h3>Affordable Prices</h3>
+          <p>Premium quality fashion at prices that fit every budget. No compromise on value.</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="why-icon">🏷</div>
+          <h3>Latest Fashion</h3>
+          <p>Always up-to-date with the latest trends in men's and kids' fashion.</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="why-icon">🏪</div>
+          <h3>Trusted Local Shop</h3>
+          <p>Serving the Gadakul & Shohratgarh community for over 5 years with trust.</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="why-icon">🧵</div>
+          <h3>Premium Fabric</h3>
+          <p>Every product is made from high-quality fabric that is soft, durable, and comfortable.</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="why-icon">😊</div>
+          <h3>Friendly Service</h3>
+          <p>We treat every customer like family. Warm, welcoming, and helpful always.</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="why-icon">📦</div>
+          <h3>Daily New Arrivals</h3>
+          <p>New stock arrives regularly so you always find something fresh and exciting.</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="why-icon">👕</div>
+          <h3>Men's & Kids Collection</h3>
+          <p>Complete collection for men and kids under one roof – shop everything here.</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="why-icon">⭐</div>
+          <h3>Excellent Quality</h3>
+          <p>We carefully select every product to ensure the best quality for our customers.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALLERY ===== -->
+  <section id="gallery" class="section gallery-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Our Store</span>
+        <h2 class="section-title">Photo <span class="gold">Gallery</span></h2>
+        <p class="section-desc">Take a look inside our store and browse our beautiful collections</p>
+      </div>
+
+      <!-- Gallery Filter -->
+      <div class="gallery-filters">
+        <button class="gal-filter active" data-gfilter="all">All</button>
+        <button class="gal-filter" data-gfilter="store">Store</button>
+        <button class="gal-filter" data-gfilter="jeans">Jeans</button>
+        <button class="gal-filter" data-gfilter="shirts">Shirts</button>
+        <button class="gal-filter" data-gfilter="kids">Kids</button>
+        <button class="gal-filter" data-gfilter="accessories">Accessories</button>
+      </div>
+
+      <!-- Gallery Masonry Grid -->
+      <div class="gallery-grid" id="galleryGrid">
+        <div class="gallery-item" data-gtag="store" onclick="openLightbox(0)">
+          <img src="assets/images/store_front.jpg" alt="Kasaudhan Collection Store Front" loading="lazy" />
+          <div class="gallery-overlay"><span>🔍 Store Front</span></div>
+        </div>
+        <div class="gallery-item gallery-item-tall" data-gtag="store" onclick="openLightbox(1)">
+          <img src="assets/images/store_interior.jpg" alt="Store Interior" loading="lazy" />
+          <div class="gallery-overlay"><span>🔍 Store Interior</span></div>
+        </div>
+        <div class="gallery-item gallery-item-tall" data-gtag="store" onclick="openLightbox(1)">
+          <img src="images/gallery/shop/shop-front.png" alt="Store Interior" loading="lazy" />
+          <div class="gallery-overlay"><span>🔍 Shope-front</span></div>
+        </div>
+        <div class="gallery-item" data-gtag="jeans" onclick="openLightbox(2)">
+          <img src="assets/images/jeans.jpg" alt="Jeans Collection" loading="lazy" />
+          <div class="gallery-overlay"><span>🔍 Jeans Collection</span></div>
+        </div>
+        <div class="gallery-item" data-gtag="shirts" onclick="openLightbox(3)">
+          <img src="assets/images/shirts.jpg" alt="Shirts Collection" loading="lazy" />
+          <div class="gallery-overlay"><span>🔍 Shirts Collection</span></div>
+        </div>
+        <!-- Dedicated Shop Video Card (Store Category) -->
+        <div class="gallery-item gallery-item-tall gallery-item-video-card" data-gtag="store">
+          <div class="video-loader-skeleton"></div>
+          <video 
+            data-src="videos/gallery/opening.mp4" 
+            autoplay 
+            muted 
+            loop 
+            playsinline 
+            class="gallery-lazy-video"
+            oncontextmenu="return false;"
+          ></video>
+          <div class="gallery-overlay"><span>🎥 Shop Tour</span></div>
+        </div>
+        <div class="gallery-item gallery-item-wide" data-gtag="shirts" onclick="openLightbox(4)">
+          <img src="assets/images/tshirts.jpg" alt="T-Shirts Collection" loading="lazy" />
+          <div class="gallery-overlay"><span>🔍 T-Shirts Collection</span></div>
+        </div>
+        <div class="gallery-item" data-gtag="kids" onclick="openLightbox(5)">
+          <img src="assets/images/kids.jpg" alt="Kids Wear" loading="lazy" />
+          <div class="gallery-overlay"><span>🔍 Kids Wear</span></div>
+        </div>
+        <div class="gallery-item" data-gtag="kids" onclick="openLightbox(5)">
+          <img src="assets/images/shope-inner.png" alt="Kids Wear" loading="lazy" />
+          <div class="gallery-overlay"><span>🔍 Shops items</span></div>
+        </div>
+        <div class="gallery-item" data-gtag="accessories" onclick="openLightbox(6)">
+          <img src="assets/images/accessories.jpg" alt="Belts & Accessories" loading="lazy" />
+          <div class="gallery-overlay"><span>🔍 Belts & Accessories</span></div>
+        </div>
+        <div class="gallery-item" data-gtag="accessories" onclick="openLightbox(7)">
+          <img src="assets/images/lowers.jpg" alt="Lowers Collection" loading="lazy" />
+          <div class="gallery-overlay"><span>🔍 Lowers</span></div>
+        </div>
+        <div class="gallery-item gallery-item-tall" data-gtag="store" onclick="openLightbox(8)">
+          <img src="assets/images/winter.jpg" alt="Winter Wear" loading="lazy" />
+          <div class="gallery-overlay"><span>🔍 Winter Wear</span></div>
+        </div>
+        <div class="gallery-item" data-gtag="store" onclick="openLightbox(9)">
+          <img src="assets/images/store_hero.jpg" alt="Store Collection" loading="lazy" />
+          <div class="gallery-overlay"><span>🔍 Full Collection</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <!-- ===== TOP 50 DEALS SECTION ===== -->
+  <section class="deals-section">
+    <div class="deals-container">
+      <h3 class="deals-header">Fabulous Fifty Deals</h3>
+      
+      <div class="deals-row-wrapper">
+        <div class="deals-row" id="dealsRow">
+          <!-- Banner -->
+          <div class="deal-card deal-banner">
+            <span class="top-text">TOP 50</span>
+            <span class="bottom-text">DEALS</span>
+          </div>
+          
+          <!-- Card 2 -->
+          <a href="pages/products.html?category=shirts" style="text-decoration:none;">
+            <div class="deal-card deal-product">
+              <img src="assets/images/shirts.jpg" alt="Shirts" class="deal-product-img" loading="lazy" onerror="this.src='images/gallery/shop/store.webp'">
+              <div class="deal-product-info">
+                <span class="deal-product-name">Shirts</span>
+                <span class="deal-product-price">Under ₹279</span>
+              </div>
+            </div>
+          </a>
+          
+          <!-- Card 3 -->
+          <a href="pages/products.html?category=jeans" style="text-decoration:none;">
+            <div class="deal-card deal-product">
+              <img src="assets/images/jeans.jpg" alt="Jeans" class="deal-product-img" loading="lazy" onerror="this.src='images/gallery/shop/store.webp'">
+              <div class="deal-product-info">
+                <span class="deal-product-name">Jeans</span>
+                <span class="deal-product-price">Under ₹479</span>
+              </div>
+            </div>
+          </a>
+          
+          <!-- Card 4 -->
+          <a href="pages/products.html?category=kids-wear" style="text-decoration:none;">
+            <div class="deal-card deal-product">
+              <img src="assets/images/kids.jpg" alt="Kids Wear" class="deal-product-img" loading="lazy" onerror="this.src='images/gallery/shop/store.webp'">
+              <div class="deal-product-info">
+                <span class="deal-product-name">Kids Wear</span>
+                <span class="deal-product-price">Under ₹199</span>
+              </div>
+            </div>
+          </a>
+          
+          <!-- Card 5 -->
+          <a href="pages/products.html?category=footwear" style="text-decoration:none;">
+            <div class="deal-card deal-product">
+              <img src="images/gallery/shop/shop05.webp" alt="Footwear" class="deal-product-img" loading="lazy" onerror="this.src='images/gallery/shop/store.webp'">
+              <div class="deal-product-info">
+                <span class="deal-product-name">Footwear</span>
+                <span class="deal-product-price">Under ₹299</span>
+              </div>
+            </div>
+          </a>
+          
+          <!-- Card 6 -->
+          <a href="pages/products.html?category=accessories" style="text-decoration:none;">
+            <div class="deal-card deal-product">
+              <img src="assets/images/accessories.jpg" alt="Accessories" class="deal-product-img" loading="lazy" onerror="this.src='images/gallery/shop/store.webp'">
+              <div class="deal-product-info">
+                <span class="deal-product-name">Accessories</span>
+                <span class="deal-product-price">Under ₹199</span>
+              </div>
+            </div>
+          </a>
+          
+          <!-- Card 7 -->
+          <a href="pages/products.html?category=tshirts" style="text-decoration:none;">
+            <div class="deal-card deal-product">
+              <img src="assets/images/tshirts.jpg" alt="T-Shirts" class="deal-product-img" loading="lazy" onerror="this.src='images/gallery/shop/store.webp'">
+              <div class="deal-product-info">
+                <span class="deal-product-name">T-Shirts</span>
+                <span class="deal-product-price">Under ₹249</span>
+              </div>
+            </div>
+          </a>
+          
+          <!-- Card 8 -->
+          <a href="pages/products.html?category=winter" style="text-decoration:none;">
+            <div class="deal-card deal-product">
+              <img src="assets/images/winter.jpg" alt="Winter Wear" class="deal-product-img" loading="lazy" onerror="this.src='images/gallery/shop/store.webp'">
+              <div class="deal-product-info">
+                <span class="deal-product-name">Winter Wear</span>
+                <span class="deal-product-price">Under ₹399</span>
+              </div>
+            </div>
+          </a>
+          
+          <!-- Card 9 -->
+          <a href="pages/products.html?category=lowers" style="text-decoration:none;">
+            <div class="deal-card deal-product">
+              <img src="assets/images/lowers.jpg" alt="Lowers" class="deal-product-img" loading="lazy" onerror="this.src='images/gallery/shop/store.webp'">
+              <div class="deal-product-info">
+                <span class="deal-product-name">Lowers</span>
+                <span class="deal-product-price">Under ₹299</span>
+              </div>
+            </div>
+          </a>
+          
+        </div>
+        
+        <button class="deals-arrow-btn" id="dealsArrowBtn" aria-label="Scroll Deals">&gt;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SHOP TOUR SECTION ===== -->
+  <section class="shop-tour-section">
+    <div class="shop-tour-bg">
+      <img src="assets/images/store_interior.jpg" alt="Visit our store" loading="lazy" />
+      <div class="tour-overlay"></div>
+    </div>
+    <div class="container tour-content">
+      <div class="tour-text">
+        <span class="section-tag">Virtual Tour</span>
+        <h2>Visit Our <span class="gold">Store</span></h2>
+        <p>Take a virtual tour of our beautiful shop before visiting us. See our complete collection and get a feel of the welcoming atmosphere at Kasaudhan Collection.</p>
+        <div class="tour-ctas">
+          <a href="https://www.google.com/maps/search/Gadakul+Shohratgarh+Siddharthnagar+Uttar+Pradesh" target="_blank" class="btn btn-gold">📍 Visit Store</a>
+          <a href="https://wa.me/919696824331" target="_blank" class="btn btn-outline-white">💬 WhatsApp</a>
+          <a href="tel:9696824331" class="btn btn-outline-white">📞 Call Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sale Banners Slider -->
+  <section class="sale-banners-section">
+
+    <div class="sale-slider-wrapper">
+
+      <div class="sale-slider-track"
+           id="saleSliderTrack">
+        <!-- slides will be injected by JS -->
+      </div>
+
+      <button class="sale-arrow sale-arrow-left"
+              id="salePrevBtn">&#8249;</button>
+      <button class="sale-arrow sale-arrow-right"
+              id="saleNextBtn">&#8250;</button>
+
+    </div>
+
+    <div class="sale-dots" id="saleDots"></div>
+
+  </section>
+
+  <!-- ===== CUSTOMER REVIEWS ===== -->
+  <section id="reviews" class="section reviews-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Testimonials</span>
+        <h2 class="section-title">What Our <span class="gold">Customers Say</span></h2>
+        <p class="section-desc">Real reviews from our happy customers in Gadakul and Shohratgarh</p>
+      </div>
+      <div class="reviews-grid">
+        <div class="review-card reveal">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Best clothing shop in Gadakul! Excellent quality at reasonable prices. Anoop bhai is very helpful and always has the latest fashion."</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">R</div>
+            <div>
+              <strong>Ramesh Kumar</strong>
+              <span>Gadakul, Shohratgarh</span>
+            </div>
+          </div>
+        </div>
+        <div class="review-card reveal">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Amazing collection for kids and men both. My kids love the clothes from here. Very affordable prices and great quality fabric!"</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">S</div>
+            <div>
+              <strong>Sunita Devi</strong>
+              <span>Shohratgarh</span>
+            </div>
+          </div>
+        </div>
+        <div class="review-card reveal">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Highly recommended! Affordable prices, friendly owner, and excellent customer service. I always shop here for my family."</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">M</div>
+            <div>
+              <strong>Mohammad Arif</strong>
+              <span>Siddharthnagar</span>
+            </div>
+          </div>
+        </div>
+        <div class="review-card reveal">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Kasaudhan Collection has the best jeans and shirts in the area. Great discounts during festival season. Highly satisfied!"</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">P</div>
+            <div>
+              <strong>Pradeep Singh</strong>
+              <span>Gadakul</span>
+            </div>
+          </div>
+        </div>
+        <div class="review-card reveal">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"I ordered via WhatsApp and the process was super easy. Got exactly what I wanted. Will order again for sure!"</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">A</div>
+            <div>
+              <strong>Anjali Sharma</strong>
+              <span>Shohratgarh</span>
+            </div>
+          </div>
+        </div>
+        <div class="review-card reveal">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"New stock arrives regularly so you always find something fresh. Love shopping here – best local clothing store in Siddharthnagar!"</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">V</div>
+            <div>
+              <strong>Vijay Yadav</strong>
+              <span>Siddharthnagar</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHATSAPP ORDER FORM ===== -->
+  <section id="order" class="section order-section">
+    <div class="container">
+      <div class="order-layout">
+        <div class="order-info reveal">
+          <span class="section-tag">Quick Order</span>
+          <h2 class="section-title">Order via <span class="gold">WhatsApp</span></h2>
+          <p>Fill in the form and your order details will be sent directly to us via WhatsApp. Fast, easy, and reliable!</p>
+          <div class="order-features">
+            <div class="order-feat">✅ Instant WhatsApp confirmation</div>
+            <div class="order-feat">✅ Cash on Delivery available</div>
+            <div class="order-feat">✅ Free size guidance</div>
+            <div class="order-feat">✅ Order tracking via WhatsApp</div>
+          </div>
+          <div class="order-contact">
+            <a href="tel:9696824331" class="contact-link">📞 9696824331</a>
+            <a href="tel:8840066738" class="contact-link">📞 8840066738</a>
+          </div>
+        </div>
+
+        <form class="order-form reveal" id="orderForm" onsubmit="submitOrder(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">Full Name *</label>
+              <input type="text" id="fname" name="fname" placeholder="Your full name" required />
+            </div>
+            <div class="form-group">
+              <label for="fphone">Phone Number *</label>
+              <input type="tel" id="fphone" name="fphone" placeholder="Your phone number" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fcategory">Category *</label>
+              <select id="fcategory" name="fcategory" required>
+                <option value="">Select Category</option>
+                <option>Jeans</option>
+                <option>Shirts</option>
+                <option>T-Shirts</option>
+                <option>Lowers</option>
+                <option>Kids Wear</option>
+                <option>Belts</option>
+                <option>Slippers</option>
+                <option>Winter Wear</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="fproduct">Product Name *</label>
+              <input type="text" id="fproduct" name="fproduct" placeholder="e.g. Slim Fit Jeans, Blue Shirt" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fsize">Size</label>
+              <input type="text" id="fsize" name="fsize" placeholder="e.g. M, L, 32, 6Y" />
+            </div>
+            <div class="form-group">
+              <label for="fcolor">Color</label>
+              <input type="text" id="fcolor" name="fcolor" placeholder="e.g. Blue, Black, White" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fqty">Quantity</label>
+              <input type="number" id="fqty" name="fqty" placeholder="1" min="1" value="1" />
+            </div>
+            <div class="form-group">
+              <label for="faddress">Delivery Address</label>
+              <input type="text" id="faddress" name="faddress" placeholder="Village, City, Pincode" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="fmessage">Additional Message</label>
+            <textarea id="fmessage" name="fmessage" rows="3" placeholder="Any special requirements or questions..."></textarea>
+          </div>
+          <div class="form-btns">
+            <button type="submit" class="btn btn-whatsapp btn-full">💬 Send WhatsApp Order</button>
+            <a href="tel:9696824331" class="btn btn-primary btn-full">📞 Call to Order</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT US ===== -->
+  <section id="about" class="section about-section">
+    <div class="container about-layout">
+      <div class="about-img-wrap reveal">
+        <img src="assets/images/store_front.jpg" alt="Kasaudhan Collection Store" loading="lazy" class="about-img" />
+        <div class="about-badge-wrap">
+          <div class="about-badge">
+            <span class="about-badge-num">5+</span>
+            <span>Years of Trust</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-content reveal">
+        <span class="section-tag">Our Story</span>
+        <h2 class="section-title">About <span class="gold">Kasaudhan Collection</span></h2>
+        <p class="about-lead">A trusted local fashion store serving Gadakul, Shohratgarh, and Siddharthnagar for over 5 years.</p>
+        <p>Kasaudhan Collection is a family-owned clothing store founded by <strong>Anoop Kasaudhan</strong> with a passion for bringing the latest fashion trends to every household at affordable prices. We specialize in stylish and comfortable clothing for men and kids.</p>
+        <p>Our store stocks a wide variety of products including premium denim jeans, casual and formal shirts, graphic T-shirts, kids wear, track lowers, leather belts, fashion slippers, and seasonal winter wear. Quality, comfort, and affordability are our core values.</p>
+        <div class="about-highlights">
+          <div class="highlight">
+            <span class="hl-icon">🏪</span>
+            <div>
+              <strong>Physical Store</strong>
+              <span>Gadakul, Shohratgarh</span>
+            </div>
+          </div>
+          <div class="highlight">
+            <span class="hl-icon">📦</span>
+            <div>
+              <strong>500+ Products</strong>
+              <span>Wide variety always in stock</span>
+            </div>
+          </div>
+          <div class="highlight">
+            <span class="hl-icon">👨‍👩‍👧</span>
+            <div>
+              <strong>1000+ Families</strong>
+              <span>Trust us every season</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-ctas">
+          <a href="tel:9696824331" class="btn btn-primary">📞 Call Us Now</a>
+          <a href="https://wa.me/919696824331" target="_blank" class="btn btn-whatsapp">💬 WhatsApp Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STORE TIMING ===== -->
+  <section class="timing-section">
+    <div class="container">
+      <div class="timing-card reveal">
+        <div class="timing-header">
+          <h2>🕐 Store <span class="gold">Timings</span></h2>
+          <p>We are open 6 days a week for your convenience</p>
+        </div>
+        <div class="timing-grid">
+          <div class="timing-row">
+            <span class="timing-day">Monday – Friday</span>
+            <span class="timing-status open">● Open</span>
+            <span class="timing-hours">9:00 AM – 9:00 PM</span>
+          </div>
+          <div class="timing-row">
+            <span class="timing-day">Saturday</span>
+            <span class="timing-status open">● Open</span>
+            <span class="timing-hours">9:00 AM – 9:00 PM</span>
+          </div>
+          <div class="timing-row">
+            <span class="timing-day">Sunday</span>
+            <span class="timing-status open">● Open</span>
+            <span class="timing-hours">10:00 AM – 8:00 PM</span>
+          </div>
+          <div class="timing-row">
+            <span class="timing-day">Festival Days</span>
+            <span class="timing-status special">● Special Hours</span>
+            <span class="timing-hours">May vary – Call ahead</span>
+          </div>
+        </div>
+        <div class="timing-note">
+          <p>📞 For any queries, call us at <a href="tel:9696824331">9696824331</a> or <a href="tel:8840066738">8840066738</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="section faq-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Help</span>
+        <h2 class="section-title">Frequently Asked <span class="gold">Questions</span></h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item reveal">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            What products do you sell at Kasaudhan Collection?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">
+            <p>We sell a wide range of men's and kids' clothing including jeans, shirts, T-shirts, track lowers, kids wear, belts, slippers, winter jackets, hoodies, and seasonal fashion accessories. New stock arrives regularly.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            Do you have kids wear available?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">
+            <p>Yes! We have a dedicated kids wear section with colorful shirts, pants, T-shirts, and full sets for boys and girls aged 2 to 12 years. Sizes range from 2Y to 12Y.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            Do you accept WhatsApp orders?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">
+            <p>Absolutely! You can order via WhatsApp at 9696824331. Use our order form on this page or directly message us with your requirements. Cash on delivery is available for local orders.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            What are your store opening hours?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">
+            <p>We are open Monday to Saturday from 9:00 AM to 9:00 PM, and on Sundays from 10:00 AM to 8:00 PM. During festival seasons, hours may vary – please call ahead to confirm.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            Where is your shop located?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">
+            <p>Our shop is located at Gadakul, Shohratgarh, Siddharthnagar, Uttar Pradesh. You can find us on Google Maps by searching "Kasaudhan Collection Gadakul" or call us at 9696824331 for directions.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            What are your price ranges?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">
+            <p>Our prices are very affordable! Kids wear starts from ₹299, T-shirts from ₹349, shirts from ₹549, jeans from ₹799, and winter wear from ₹999. We regularly offer festival discounts and seasonal sales.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Contact <span class="gold">Us</span></h2>
+        <p class="section-desc">We'd love to hear from you. Reach out via phone, WhatsApp, or visit us in person!</p>
+      </div>
+      <div class="contact-layout">
+        <div class="contact-cards">
+          <div class="contact-card reveal">
+            <div class="cc-icon">👤</div>
+            <h3>Owner</h3>
+            <p>Anoop Kasaudhan</p>
+          </div>
+          <div class="contact-card reveal">
+            <div class="cc-icon">📞</div>
+            <h3>Phone Numbers</h3>
+            <a href="tel:9696824331" class="cc-link">9696824331</a>
+            <a href="tel:8840066738" class="cc-link">8840066738</a>
+          </div>
+          <div class="contact-card reveal">
+            <div class="cc-icon">📍</div>
+            <h3>Address</h3>
+            <p>Gadakul, Shohratgarh<br />Siddharthnagar<br />Uttar Pradesh, India</p>
+          </div>
+          <div class="contact-card reveal">
+            <div class="cc-icon">🕐</div>
+            <h3>Opening Hours</h3>
+            <p>Mon-Sat: 9AM – 9PM<br />Sunday: 10AM – 8PM</p>
+          </div>
+        </div>
+
+        <div class="contact-actions reveal">
+          <h3>Reach Out To Us</h3>
+          <div class="cta-btns-big">
+            <a href="tel:9696824331" class="big-btn big-btn-call">
+              <span class="big-btn-icon">📞</span>
+              <div>
+                <strong>Call Now</strong>
+                <span>9696824331</span>
+              </div>
+            </a>
+            <a href="https://wa.me/919696824331" target="_blank" class="big-btn big-btn-wa">
+              <span class="big-btn-icon">💬</span>
+              <div>
+                <strong>WhatsApp</strong>
+                <span>Chat with us</span>
+              </div>
+            </a>
+            <a href="https://www.google.com/maps/search/Gadakul+Shohratgarh+Siddharthnagar+Uttar+Pradesh" target="_blank" class="big-btn big-btn-map">
+              <span class="big-btn-icon">📍</span>
+              <div>
+                <strong>Get Directions</strong>
+                <span>Find us on Maps</span>
+              </div>
+            </a>
+          </div>
+
+          <!-- Inquiry Form -->
+          <form class="inquiry-form" id="inquiryForm" onsubmit="submitInquiry(event)">
+            <h4>Send an Inquiry</h4>
+            <input type="text" placeholder="Your Name" id="iname" required />
+            <input type="tel" placeholder="Your Phone" id="iphone" required />
+            <textarea rows="3" placeholder="Your message or inquiry..." id="imsg" required></textarea>
+            <button type="submit" class="btn btn-primary btn-full">📨 Send Inquiry via WhatsApp</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GOOGLE MAP ===== -->
+  <section class="map-section">
+    <div id="map"></div>
+    <div class="map-overlay-card">
+      <h3>📍 Kasaudhan Collection</h3>
+      <p>Gadakul, Shohratgarh<br />Siddharthnagar, UP</p>
+      <a href="https://www.google.com/maps/search/Gadakul+Shohratgarh+Siddharthnagar+Uttar+Pradesh" target="_blank" class="btn btn-gold btn-sm">Open in Google Maps</a>
+    </div>
+  </section>
+
+  <!-- ===== NEWSLETTER ===== -->
+  <section class="newsletter-section">
+    <div class="container">
+      <div class="newsletter-card reveal">
+        <div class="nl-content">
+          <h2>Stay Updated with <span class="gold">New Arrivals</span></h2>
+          <p>Get the latest collection updates and exclusive offers directly on your WhatsApp!</p>
+        </div>
+        <div class="nl-form">
+          <input type="tel" id="nlPhone" placeholder="Enter your WhatsApp number" />
+          <button onclick="subscribeNewsletter()" class="btn btn-gold">Subscribe 💬</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <span class="logo-k">K</span>
+          <div class="logo-text">
+            <span class="logo-name">KASAUDHAN</span>
+            <span class="logo-sub">COLLECTION</span>
+          </div>
+        </div>
+        <p class="footer-desc">Premium Men's & Kids Fashion Store in Gadakul, Shohratgarh, Siddharthnagar, Uttar Pradesh. Affordable prices, quality fabric, friendly service.</p>
+        <div class="footer-social">
+          <a href="https://wa.me/919696824331" target="_blank" class="social-link" aria-label="WhatsApp">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </a>
+          <a href="tel:9696824331" class="social-link" aria-label="Call">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.16 6.16l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          </a>
+          <a href="https://www.google.com/maps/search/Gadakul+Shohratgarh+Siddharthnagar+Uttar+Pradesh" target="_blank" class="social-link" aria-label="Location">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#categories">Categories</a></li>
+          <li><a href="pages/products.html">Products</a></li>
+          <li><a href="pages/gallery.html">Gallery</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="pages/contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Collections</h4>
+        <ul>
+          <li><a href="pages/products.html">👖 Jeans</a></li>
+          <li><a href="pages/products.html">👕 Shirts</a></li>
+          <li><a href="pages/products.html">👕 T-Shirts</a></li>
+          <li><a href="pages/products.html">🩳 Lowers</a></li>
+          <li><a href="pages/products.html">👦 Kids Wear</a></li>
+          <li><a href="pages/products.html">👔 Belts</a></li>
+          <li><a href="pages/products.html">🩴 Slippers</a></li>
+          <li><a href="pages/products.html">🧥 Winter Wear</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact Info</h4>
+        <div class="footer-contact">
+          <div class="fc-item">
+            <span>📞</span>
+            <div>
+              <a href="tel:9696824331">9696824331</a><br />
+              <a href="tel:8840066738">8840066738</a>
+            </div>
+          </div>
+          <div class="fc-item">
+            <span>📍</span>
+            <p>Gadakul, Shohratgarh<br />Siddharthnagar, UP</p>
+          </div>
+          <div class="fc-item">
+            <span>🕐</span>
+            <p>Mon–Sat: 9AM–9PM<br />Sun: 10AM–8PM</p>
+          </div>
+          <div class="fc-item">
+            <span>👤</span>
+            <p>Owner: Anoop Kasaudhan</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>© 2026 <strong>Kasaudhan Collection</strong>. All Rights Reserved. Designed with ❤️</p>
+        <p class="footer-seo">Men's & Kids Fashion Store | Gadakul, Shohratgarh, Siddharthnagar, Uttar Pradesh</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== FLOATING BUTTONS ===== -->
+  <div class="floating-buttons">
+    <a href="https://wa.me/919696824331?text=Hello%20Kasaudhan%20Collection!%20I%20want%20to%20inquire%20about%20your%20products." target="_blank" class="float-btn float-wa" title="WhatsApp Us" aria-label="WhatsApp">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      <span class="float-label">WhatsApp</span>
+    </a>
+    <a href="tel:9696824331" class="float-btn float-call" title="Call Us" aria-label="Call Now">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.16 6.16l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+      <span class="float-label">Call</span>
+    </a>
+    <button id="backToTop" class="float-btn float-top" onclick="scrollToTop()" title="Back to Top" aria-label="Back to top" hidden>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+    </button>
+  </div>
+
+  <!-- ===== MOBILE BOTTOM NAV ===== -->
+  <nav class="mobile-bottom-nav" aria-label="Mobile Bottom Navigation">
+    <a href="#home" class="mbn-item active" id="mbn-home">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      <span>Home</span>
+    </a>
+    <a href="pages/products.html" class="mbn-item" id="mbn-products">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/></svg>
+      <span>Shop</span>
+    </a>
+    <a href="https://wa.me/919696824331" target="_blank" class="mbn-item mbn-wa">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      <span>Order</span>
+    </a>
+    <a href="pages/gallery.html" class="mbn-item" id="mbn-gallery">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+      <span>Gallery</span>
+    </a>
+    <a href="pages/contact.html" class="mbn-item" id="mbn-contact">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.16 6.16l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+      <span>Contact</span>
+    </a>
+  </nav>
+
+  <!-- ===== CART DRAWER ===== -->
+  <div id="cartDrawer" class="cart-drawer" hidden>
+    <div class="cart-header">
+      <h3>🛒 Your Cart</h3>
+      <button onclick="closeCart()" class="cart-drawer-close">✕</button>
+    </div>
+    <div class="cart-body" id="cartBody">
+      <div class="cart-empty">
+        <p>🛒 Your cart is empty</p>
+        <p>Add items from the products section!</p>
+      </div>
+    </div>
+    <div class="cart-footer" id="cartFooter" hidden>
+      <div class="cart-total">Total: <strong id="cartTotal">₹0</strong></div>
+      <button onclick="checkoutViaWhatsApp()" class="btn btn-whatsapp btn-full">💬 Checkout via WhatsApp</button>
+    </div>
+  </div>
+  <div id="cartBackdrop" class="cart-backdrop" onclick="closeCart()" hidden></div>
+
+  <!-- ===== LIGHTBOX ===== -->
+  <div id="lightbox" class="lightbox" hidden>
+    <div class="lightbox-inner">
+      <button class="lb-close" onclick="closeLightbox()" aria-label="Close">✕</button>
+      <button class="lb-prev" onclick="lightboxNav(-1)" aria-label="Previous">‹</button>
+      <button class="lb-next" onclick="lightboxNav(1)" aria-label="Next">›</button>
+      <img id="lbImg" src="" alt="Gallery Image" class="lb-img" />
+      <p id="lbCaption" class="lb-caption"></p>
+    </div>
+  </div>
+
+  <!-- ===== QUICK VIEW MODAL ===== -->
+  <div id="quickViewModal" class="quickview-modal" hidden>
+    <div class="qv-inner">
+      <button onclick="closeQuickView()" class="qv-close">✕</button>
+      <div class="qv-content" id="qvContent"></div>
+    </div>
+  </div>
+  <div id="qvBackdrop" class="qv-backdrop" onclick="closeQuickView()" hidden></div>
+
+  <!-- ===== FESTIVAL POPUP ===== -->
+  <!-- Backdrop (separate from popup for correct stacking) -->
+  <div id="fpBackdrop" class="fp-backdrop" role="presentation" aria-hidden="true"></div>
+
+  <!-- Popup -->
+  <div id="festivalPopup" class="festival-popup" role="dialog" aria-modal="true" aria-labelledby="fpTitle">
+    <div class="fp-inner" id="fpInner">
+      <!-- Close button -->
+      <button id="fpClose" class="fp-close" aria-label="Close festival sale popup">✕</button>
+
+      <div class="fp-content">
+        <span class="fp-emoji">🎊</span>
+        <h2 id="fpTitle">Festival <span class="gold">Sale!</span></h2>
+        <p>Up to <strong>40% OFF</strong> on all items at Kasaudhan Collection</p>
+        <p class="fp-sub">Limited time offer – Order now before stock runs out!</p>
+        <div class="fp-btns">
+          <a href="#products" id="fpShopBtn" class="btn btn-gold">🛍 Shop Now</a>
+          <a href="https://wa.me/919696824331?text=I%20want%20to%20order%20during%20festival%20sale!" target="_blank" id="fpWaBtn" class="btn btn-whatsapp">💬 WhatsApp Order</a>
+        </div>
+      </div>
+
+      <!-- Auto-close countdown bar -->
+      <div class="fp-timer-bar" aria-hidden="true">
+        <div class="fp-timer-fill" id="fpTimerFill"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <!-- Main JS -->
+  <script src="js/script.js"></script>
+  <script>
+  document.querySelector(
+    '.suggested-row'
+  ).addEventListener('click', function(){});
+
+  document.querySelector(
+    '.suggested-arrow'
+  ).addEventListener('click', function(){
+    document.querySelector('.suggested-row')
+      .scrollBy({
+        left: 400, 
+        behavior: 'smooth'
+      });
+  });
+  </script>
+  
+<script>
+(function () {
+
+  // ── LIST ALL 7 BANNER FILES ──
+  // Read exact filenames from 
+  // images/banners/ folder and 
+  // replace these with actual filenames:
+
+  const banners = [
+    {
+      src: 'images/banners/img1.png',
+      link: 'pages/products.html',
+      alt: 'Sale Banner 1'
+    },
+    {
+      src: 'images/banners/img2.png',
+      link: 'pages/products.html?category=shirts',
+      alt: 'Shirts Sale'
+    },
+    {
+      src: 'images/banners/img3.png',
+      link: 'pages/products.html?category=jeans',
+      alt: 'Jeans Sale'
+    },
+    {
+      src: 'images/banners/img4.png',
+      link: 'pages/products.html?category=kids-wear',
+      alt: 'Kids Sale'
+    },
+    {
+      src: 'images/banners/img5.png',
+      link: 'pages/products.html?category=winter',
+      alt: 'Winter Sale'
+    },
+    {
+      src: 'images/banners/img6.png',
+      link: 'pages/products.html?category=accessories',
+      alt: 'Accessories Sale'
+    },
+    {
+      src: 'images/banners/img7.png',
+      link: 'pages/products.html?category=new-arrivals',
+      alt: 'New Arrivals'
+    }
+  ];
+
+  // ── BUILD SLIDES ──
+  const track = document.getElementById(
+    'saleSliderTrack');
+  const dotsContainer = document.getElementById(
+    'saleDots');
+
+  banners.forEach((banner, i) => {
+    const testImg = new Image();
+    testImg.onload = () => {
+      console.log('✓ Loaded:', banner.src);
+    };
+    testImg.onerror = () => {
+      console.error('✗ Failed:', banner.src);
+    };
+    testImg.src = banner.src;
+
+    // Create slide
+    const slide = document.createElement('div');
+    slide.classList.add('sale-slide');
+
+    const link = document.createElement('a');
+    link.href = banner.link;
+
+    const img = document.createElement('img');
+    img.src = banner.src;
+    img.alt = banner.alt;
+    img.loading = 'lazy';
+
+    link.appendChild(img);
+    slide.appendChild(link);
+    track.appendChild(slide);
+
+    // Create dot
+    const dot = document.createElement('button');
+    dot.classList.add('sale-dot');
+    if (i === 0) dot.classList.add('active');
+    dot.addEventListener('click', () => {
+      go(i); reset();
+    });
+    dotsContainer.appendChild(dot);
+  });
+
+  // ── SLIDER LOGIC ──
+  const total = banners.length;
+  let current = 0;
+  let timer = null;
+
+  function go(index) {
+    current = (index + total) % total;
+    track.style.transform =
+      'translateX(-' + (current * 100) + '%)';
+    document.querySelectorAll('.sale-dot')
+      .forEach((d, i) => {
+        d.classList.toggle(
+          'active', i === current
+        );
+      });
+  }
+
+  function next() { go(current + 1); }
+  function prev() { go(current - 1); }
+
+  document.getElementById('saleNextBtn')
+    ?.addEventListener('click', () => {
+      next(); reset();
+    });
+
+  document.getElementById('salePrevBtn')
+    ?.addEventListener('click', () => {
+      prev(); reset();
+    });
+
+  function start() {
+    timer = setInterval(next, 4000);
+  }
+
+  function reset() {
+    clearInterval(timer);
+    start();
+  }
+
+  // Touch swipe support
+  let txStart = 0;
+  track.addEventListener('touchstart',
+    e => {
+      txStart = e.changedTouches[0].screenX;
+    }, { passive: true });
+
+  track.addEventListener('touchend',
+    e => {
+      const diff = txStart -
+        e.changedTouches[0].screenX;
+      if (Math.abs(diff) > 50) {
+        diff > 0 ? next() : prev();
+        reset();
+      }
+    }, { passive: true });
+
+  // Pause on hover
+  track.addEventListener('mouseenter',
+    () => clearInterval(timer));
+  track.addEventListener('mouseleave',
+    start);
+
+  // Start auto slide
+  start();
+
+})();
+</script>
+</body>
+</html>

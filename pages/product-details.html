@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>Product Details | Kasaudhan Collection</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/products.css" />
+
+  <link rel="icon" type="image/x-icon" href="../favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <meta name="theme-color" content="#111111">
+</head>
+<body>
+
+  <!-- STICKY HEADER -->
+  <header id="header" class="header">
+    <div class="header-inner">
+      <a href="../index.html#home" class="logo" aria-label="Kasaudhan Collection Home">
+        <span class="logo-k">K</span>
+        <div class="logo-text">
+          <span class="logo-name">KASAUDHAN</span>
+          <span class="logo-sub">COLLECTION</span>
+        </div>
+      </a>
+
+      <nav class="nav-desktop" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="../index.html#home" class="nav-link">Home</a></li>
+          <li><a href="../index.html#categories" class="nav-link">Categories</a></li>
+          <li><a href="products.html" class="nav-link active">Products</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="../index.html#about" class="nav-link">About</a></li>
+          <li><a href="../index.html#reviews" class="nav-link">Reviews</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button id="searchToggle" class="icon-btn" aria-label="Search">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </button>
+        <button onclick="window.location.href='cart.html'" class="icon-btn cart-btn" aria-label="Shopping Cart">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+          <span class="cart-badge" id="cartCount">0</span>
+        </button>
+        <a href="products.html" class="btn btn-shop">Shop Now</a>
+        <button id="menuToggle" class="icon-btn menu-btn" aria-label="Open Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Search Bar -->
+    <div id="searchBar" class="search-bar" hidden>
+      <div class="search-container">
+        <input type="search" id="searchInput" placeholder="Search jeans, shirts, kids wear..." class="search-input" aria-label="Search products" autocomplete="off" />
+        <button id="searchClose" class="search-close" aria-label="Close search">✕</button>
+      </div>
+    </div>
+
+    <!-- Mobile Nav Drawer -->
+    <div id="mobileOverlay" class="mobile-overlay" aria-hidden="true" hidden></div>
+    <nav id="mobileNav" class="nav-mobile" aria-label="Mobile Navigation" hidden>
+      <div class="mobile-nav-header">
+        <a href="../index.html#home" class="logo mobile-logo" aria-label="Home">
+          <span class="logo-k">K</span>
+          <div class="logo-text">
+            <span class="logo-name">KASAUDHAN</span>
+            <span class="logo-sub">COLLECTION</span>
+          </div>
+        </a>
+        <button id="mobileClose" class="icon-btn mobile-close" aria-label="Close Menu">✕</button>
+      </div>
+      
+      <div class="mobile-nav-actions">
+        <button class="icon-btn mobile-search-btn" aria-label="Search">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          Search
+        </button>
+        <button onclick="window.location.href='cart.html'" class="icon-btn cart-btn mobile-cart-btn" aria-label="Cart">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+          Cart <span class="cart-badge" id="mobileCartCount">0</span>
+        </button>
+      </div>
+
+      <ul class="mobile-nav-list">
+        <li><a href="../index.html#home" class="mobile-nav-link">Home</a></li>
+        <li><a href="../index.html#categories" class="mobile-nav-link">Categories</a></li>
+        <li><a href="products.html" class="mobile-nav-link active">Products</a></li>
+        <li><a href="gallery.html" class="mobile-nav-link">Gallery</a></li>
+        <li><a href="../index.html#about" class="mobile-nav-link">About</a></li>
+        <li><a href="../index.html#reviews" class="mobile-nav-link">Reviews</a></li>
+        <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+      </ul>
+      
+      <div class="mobile-nav-ctas">
+        <a href="products.html" class="btn btn-shop w-full mobile-shop-btn">Shop Now</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="products-page">
+    <div class="container" id="productDetailsContainer">
+      <div class="pd-container">
+        
+        <!-- Gallery -->
+        <div class="pd-gallery">
+          <img id="pdImg" src="" alt="Product Image" />
+        </div>
+
+        <!-- Info -->
+        <div class="pd-info">
+          <div class="pd-cat" id="pdCat">CATEGORY</div>
+          <h1 class="pd-name" id="pdName">Product Name</h1>
+          <div class="pd-rating" id="pdRating">⭐ 5.0 / 5 Rating</div>
+          
+          <div class="pd-price-row">
+            <span class="pd-price" id="pdPrice">₹0</span>
+            <span class="pd-old-price" id="pdOldPrice">₹0</span>
+            <span class="pd-discount" id="pdDiscount">-0%</span>
+          </div>
+          
+          <p class="pd-desc" id="pdDesc">Product Description</p>
+          
+          <div class="pd-sizes-wrapper">
+            <h4>Select Size:</h4>
+            <div class="pd-sizes" id="pdSizes">
+              <!-- JS Injects Size Boxes Here -->
+            </div>
+          </div>
+          
+          <div class="pd-actions">
+            <button class="btn btn-primary" onclick="addPdToCart()">🛒 Add to Cart</button>
+            <button class="btn btn-whatsapp" onclick="orderPdWhatsApp()">💬 WhatsApp Order</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <span class="logo-k">K</span>
+          <div class="logo-text">
+            <span class="logo-name">KASAUDHAN</span>
+            <span class="logo-sub">COLLECTION</span>
+          </div>
+        </div>
+        <p class="footer-desc">Premium Men's & Kids Fashion Store in Gadakul, Shohratgarh, Siddharthnagar, Uttar Pradesh.</p>
+        <div class="footer-social">
+          <a href="https://wa.me/919696824331" target="_blank" class="social-link" aria-label="WhatsApp">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="../index.html#home">Home</a></li>
+          <li><a href="../index.html#categories">Categories</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Info</h4>
+        <div class="footer-contact">
+          <div class="fc-item"><span>📞</span><div><a href="tel:9696824331">9696824331</a></div></div>
+          <div class="fc-item"><span>📍</span><p>Gadakul, Shohratgarh<br />Siddharthnagar, UP</p></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>© 2026 <strong>Kasaudhan Collection</strong>. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/cart.js"></script>
+  <script src="../js/products.js"></script>
+</body>
+</html>
